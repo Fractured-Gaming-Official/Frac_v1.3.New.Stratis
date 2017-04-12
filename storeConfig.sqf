@@ -167,30 +167,30 @@ allGunStoreFirearms = compileFinal str (call pistolArray + call smgArray + call 
 staticGunsArray = compileFinal str
 [
 	// ["Vehicle Ammo Crate", "Box_NATO_AmmoVeh_F", 2500],
-	["Static Titan AT 4Rnd", "B_static_AT_F", 30000], // Static launchers only have 4 ammo, hence the low price
-	["Static Titan AT 4Rnd", "O_static_AT_F", 30000],
-	["Static Titan AT 4Rnd", "I_static_AT_F", 30000],
-	["Static Titan AA 4Rnd", "B_static_AA_F", 30000],
-	["Static Titan AA 4Rnd", "O_static_AA_F", 30000],
-	["Static Titan AA 4Rnd", "I_static_AA_F", 30000],
-	["Mk30 HMG .50 Low tripod", "B_HMG_01_F", 20000],
-	["Mk30 HMG .50 Low tripod", "O_HMG_01_F", 20000],
-	["Mk30 HMG .50 Low tripod", "I_HMG_01_F", 20000],
+	["Static Titan AT 4Rnd", "B_static_AT_F", 20000], // Static launchers only have 4 ammo, hence the low price
+	["Static Titan AT 4Rnd", "O_static_AT_F", 20000],
+	["Static Titan AT 4Rnd", "I_static_AT_F", 20000],
+	["Static Titan AA 4Rnd", "B_static_AA_F", 20000],
+	["Static Titan AA 4Rnd", "O_static_AA_F", 20000],
+	["Static Titan AA 4Rnd", "I_static_AA_F", 20000],
+	["Mk30 HMG .50 Low tripod", "B_HMG_01_F", 10000],
+	["Mk30 HMG .50 Low tripod", "O_HMG_01_F", 10000],
+	["Mk30 HMG .50 Low tripod", "I_HMG_01_F", 10000],
 	// ["Mk30A HMG .50 Sentry", "B_HMG_01_A_F", 5000], // "A" = Autonomous = Overpowered
 	// ["Mk30A HMG .50 Sentry", "O_HMG_01_A_F", 5000],
 	// ["Mk30A HMG .50 Sentry", "I_HMG_01_A_F", 5000],
-	["Mk30 HMG .50 High tripod", "B_HMG_01_high_F", 20000],
-	["Mk30 HMG .50 High tripod", "O_HMG_01_high_F", 20000],
-	["Mk30 HMG .50 High tripod", "I_HMG_01_high_F", 20000],
-	["Mk32 GMG 20mm Low tripod", "B_GMG_01_F", 25000],
-	["Mk32 GMG 20mm Low tripod", "O_GMG_01_F", 25000],
-	["Mk32 GMG 20mm Low tripod", "I_GMG_01_F", 25000],
+	["Mk30 HMG .50 High tripod", "B_HMG_01_high_F", 10000],
+	["Mk30 HMG .50 High tripod", "O_HMG_01_high_F", 10000],
+	["Mk30 HMG .50 High tripod", "I_HMG_01_high_F", 10000],
+	["Mk32 GMG 20mm Low tripod", "B_GMG_01_F", 15000],
+	["Mk32 GMG 20mm Low tripod", "O_GMG_01_F", 15000],
+	["Mk32 GMG 20mm Low tripod", "I_GMG_01_F", 15000],
 	// ["Mk32A GMG 20mm Sentry", "B_GMG_01_A_F", 10000],
 	// ["Mk32A GMG 20mm Sentry", "O_GMG_01_A_F", 10000],
 	// ["Mk32A GMG 20mm Sentry", "I_GMG_01_A_F", 10000],
-	["Mk32 GMG 20mm High tripod", "B_GMG_01_high_F", 26000],
-	["Mk32 GMG 20mm High tripod", "O_GMG_01_high_F", 26000],
-	["Mk32 GMG 20mm High tripod", "I_GMG_01_high_F", 26000]
+	["Mk32 GMG 20mm High tripod", "B_GMG_01_high_F", 15000],
+	["Mk32 GMG 20mm High tripod", "O_GMG_01_high_F", 15000],
+	["Mk32 GMG 20mm High tripod", "I_GMG_01_high_F", 15000]
 	// ["Mk6 Mortar", "B_Mortar_01_F", 12500],
 	// ["Mk6 Mortar", "O_Mortar_01_F", 12500],
 	// ["Mk6 Mortar", "I_Mortar_01_F", 12500]
@@ -206,9 +206,9 @@ throwputArray = compileFinal str
 	["APERS Mine", "APERSMine_Range_Mag", 600],
 	["Claymore Charge", "ClaymoreDirectionalMine_Remote_Mag", 550],
 	["M6 SLAM Mine", "SLAMDirectionalMine_Wire_Mag", 650],
-	["AT Mine", "ATMine_Range_Mag", 700],
+	["AT Mine", "ATMine_Range_Mag", 1000],
 	["Explosive Charge", "DemoCharge_Remote_Mag", 700],
-	["Explosive Satchel", "SatchelCharge_Remote_Mag", 700],
+	["Explosive Satchel", "SatchelCharge_Remote_Mag", 1500],
 	["Smoke Grenade (White)", "SmokeShell", 100],
 	["Smoke Grenade (Purple)", "SmokeShellPurple", 100],
 	["Smoke Grenade (Blue)", "SmokeShellBlue", 100],
@@ -279,9 +279,9 @@ ammoArray = compileFinal str
 	["RPG-42 Anti-Tank Rocket", "RPG32_F", 1000],              // Direct damage: high      | Splash damage: low    | Guidance: none
 	["RPG-42 High-Explosive Rocket", "RPG32_HE_F", 1000],      // Direct damage: medium    | Splash damage: medium | Guidance: none
 	["PCML Anti-Tank Missile", "NLAW_F", 1800],                // Direct damage: very high | Splash damage: low    | Guidance: laser, ground vehicles
-	["Titan Anti-Tank Missile", "Titan_AT", 5000],             // Direct damage: high      | Splash damage: low    | Guidance: mouse, laser, ground vehicles
-	["Titan Anti-Personnel Missile", "Titan_AP", 5000],        // Direct damage: low       | Splash damage: high   | Guidance: mouse, laser
-	["Titan Anti-Air Missile", "Titan_AA", 5000],              // Direct damage: low       | Splash damage: medium | Guidance: aircraft
+	["Titan Anti-Tank Missile", "Titan_AT", 4000],             // Direct damage: high      | Splash damage: low    | Guidance: mouse, laser, ground vehicles
+	["Titan Anti-Personnel Missile", "Titan_AP", 6000],        // Direct damage: low       | Splash damage: high   | Guidance: mouse, laser
+	["Titan Anti-Air Missile", "Titan_AA", 4000],              // Direct damage: low       | Splash damage: medium | Guidance: aircraft
 	["40mm HE Grenade Round", "1Rnd_HE_Grenade_shell", 125],
 	["40mm 3Rnd HE Grenades", "3Rnd_HE_Grenade_shell", 250],
     // ["40mm Toxic Gas", "1Rnd_SmokeYellow_Grenade_shell", 1000],
@@ -892,35 +892,35 @@ armoredArray = compileFinal str
 [
 	["Prowler (Doorless)", "B_CTRG_LSV_01_light_F", 2000, "vehicle", "SKIPSAVE"],
 	["Prowler", "B_T_LSV_01_unarmed_F", 2000, "vehicle", "SKIPSAVE"],
-	["Prowler HMG", "B_T_LSV_01_armed_F", 12500, "vehicle", "SKIPSAVE"],
+	["Prowler HMG", "B_T_LSV_01_armed_F", 10000, "vehicle", "SKIPSAVE"],
 	["Qilin", "O_T_LSV_02_unarmed_F", 2000, "vehicle", "SKIPSAVE"],
-	["Qilin Minigun", "O_T_LSV_02_armed_F", 10000, "vehicle", "SKIPSAVE"],
+	["Qilin Minigun", "O_T_LSV_02_armed_F", 15000, "vehicle", "SKIPSAVE"],
 
 	["Hunter", "B_MRAP_01_F", 4000, "vehicle", "SKIPSAVE"],
-	["Hunter HMG", "B_MRAP_01_hmg_F", 12500, "vehicle"],
-	["Hunter GMG", "B_MRAP_01_gmg_F", 20000, "vehicle"],
+	["Hunter HMG", "B_MRAP_01_hmg_F", 10000, "vehicle"],
+	["Hunter GMG", "B_MRAP_01_gmg_F", 15000, "vehicle"],
 	["Ifrit", "O_MRAP_02_F", 4000, "vehicle", "SKIPSAVE"],
-	["Ifrit HMG", "O_MRAP_02_hmg_F", 15000, "vehicle"],
-	["Ifrit GMG", "O_MRAP_02_gmg_F", 20000, "vehicle"],
+	["Ifrit HMG", "O_MRAP_02_hmg_F", 10000, "vehicle"],
+	["Ifrit GMG", "O_MRAP_02_gmg_F", 15000, "vehicle"],
 	["Strider", "I_MRAP_03_F", 4000, "vehicle", "SKIPSAVE"],
-	["Strider HMG", "I_MRAP_03_hmg_F", 15000, "vehicle"],
-	["Strider GMG", "I_MRAP_03_gmg_F", 22000, "vehicle"],
-	["MSE-3 Marid", "O_APC_Wheeled_02_rcws_F", 30000, "vehicle"],
-	["AMV-7 Marshall", "B_APC_Wheeled_01_cannon_F", 40000, "vehicle"],
-	["AFV-4 Gorgon", "I_APC_Wheeled_03_cannon_F", 50000, "vehicle"]
+	["Strider HMG", "I_MRAP_03_hmg_F", 10000, "vehicle"],
+	["Strider GMG", "I_MRAP_03_gmg_F", 15000, "vehicle"],
+	["MSE-3 Marid", "O_APC_Wheeled_02_rcws_F", 25000, "vehicle"],
+	["AMV-7 Marshall", "B_APC_Wheeled_01_cannon_F", 30000, "vehicle"],
+	["AFV-4 Gorgon", "I_APC_Wheeled_03_cannon_F", 35000, "vehicle"]
 ];
 
 tanksArray = compileFinal str
 [
 	["CRV-6e Bobcat (Resupply)", "B_APC_Tracked_01_CRV_F", 30000, "vehicle"],
-	["IFV-6c Panther", "B_APC_Tracked_01_rcws_F", 45000, "vehicle"],
-	["FV-720 Mora", "I_APC_tracked_03_cannon_F", 60000, "vehicle"],
-	["BTR-K Kamysh", "O_APC_Tracked_02_cannon_F", 75000, "vehicle"],
-	["IFV-6a Cheetah AA", "B_APC_Tracked_01_AA_F", 100000, "vehicle"],
-	["ZSU-39 Tigris AA", "O_APC_Tracked_02_AA_F", 125000, "vehicle"],
-	["M2A1 Slammer", "B_MBT_01_cannon_F", 100000, "vehicle"],
-	["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 110000, "vehicle"], // Commander gun variant
-	["T-100 Varsuk", "O_MBT_02_cannon_F", 120000, "vehicle"],
+	["IFV-6c Panther", "B_APC_Tracked_01_rcws_F", 35000, "vehicle"],
+	["FV-720 Mora", "I_APC_tracked_03_cannon_F", 40000, "vehicle"],
+	["BTR-K Kamysh", "O_APC_Tracked_02_cannon_F", 45000, "vehicle"],
+	["IFV-6a Cheetah AA", "B_APC_Tracked_01_AA_F", 80000, "vehicle"],
+	["ZSU-39 Tigris AA", "O_APC_Tracked_02_AA_F", 110000, "vehicle"],
+	["M2A1 Slammer", "B_MBT_01_cannon_F", 90000, "vehicle"],
+	["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 100000, "vehicle"], // Commander gun variant
+	["T-100 Varsuk", "O_MBT_02_cannon_F", 80000, "vehicle"],
 	["MBT-52 Kuma", "I_MBT_03_cannon_F", 125000, "vehicle"]
 ];
 
@@ -946,11 +946,12 @@ helicoptersArray = compileFinal str
 	["CH-67 Huron (Armed)", "B_Heli_Transport_03_F", 15000, "vehicle"], // CH-47 with 2 side miniguns
 
 	["UH-80 Ghost Hawk", "B_Heli_Transport_01_F", 15000, "vehicle"], // UH-60 Stealth with 2 side miniguns
-	["AH-9 Pawnee", "B_Heli_Light_01_armed_F", 60000, "vehicle"], // Armed AH-6
-	["PO-30 Orca (Armed, Black)", "O_Heli_Light_02_v2_F", 70000, "vehicle"], // Armed Ka-60 with orca paintjob
-	["PO-30 Orca (Armed, Hex)", "O_Heli_Light_02_F", 80000, "vehicle"], // Armed Ka-60
-	["WY-55 Hellcat (Armed)", "I_Heli_light_03_F", 90000, "vehicle"], // Armed AW159
-	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 100000, "vehicle"],
+	["AH-9 Pawnee", "B_Heli_Light_01_armed_F", 40000, "vehicle"], // Armed AH-6
+	["PO-30 Orca (Armed, Black)", "O_Heli_Light_02_v2_F", 60000, "vehicle"], // Armed Ka-60 with orca paintjob
+	["PO-30 Orca (Armed, Hex)", "O_Heli_Light_02_F", 70000, "vehicle"], // Armed Ka-60
+	["WY-55 Hellcat (Armed)", "I_Heli_light_03_F", 50000, "vehicle"], // Armed AW159
+	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 200000, "vehicle"],
+	["Y-32 Xi'an", "O_T_VTOL_02_infantry_F", 250000, "vehicle"],
 	
 	["AH-99 Blackfoot", "B_Heli_Attack_01_F", 600000, "vehicle"], // RAH-66 with gunner
 	["Mi-48 Kajman (Hex)", "O_Heli_Attack_02_F", 700000, "vehicle"], // Mi-28 with gunner
@@ -963,13 +964,13 @@ planesArray = compileFinal str
 	["V-44 X Blackfish (Infantry)", "B_T_VTOL_01_infantry_F", 100000, "vehicle"],
 	["V-44 X Blackfish (Gunship)", "B_T_VTOL_01_armed_F", 600000, "vehicle"],
 	["Y-32 Xi'an", "O_T_VTOL_02_infantry_F", 250000, "vehicle"],
-	["MQ4A Greyhawk Missile UAV", "B_UAV_02_F", 300000, "vehicle"],
-	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_CAS_F", 400000, "vehicle"],
-	["K40 Ababil-3 Missile UAV", "O_UAV_02_F", 400000, "vehicle"],
-	["K40 Ababil-3 Bomber UAV", "O_UAV_02_CAS_F", 500000, "vehicle"],
-	["K40 Ababil-3 Missile UAV", "I_UAV_02_F", 400000, "vehicle"],
-	["K40 Ababil-3 Bomber UAV", "I_UAV_02_CAS_F", 500000, "vehicle"],
-	["KH-3A Fenghuang UAV", "O_T_UAV_04_CAS_F", 600000, "vehicle"],
+	["MQ4A Greyhawk Missile UAV", "B_UAV_02_F", 100000, "vehicle"],
+	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_CAS_F", 75000, "vehicle"],
+	["K40 Ababil-3 Missile UAV", "O_UAV_02_F", 100000, "vehicle"],
+	["K40 Ababil-3 Bomber UAV", "O_UAV_02_CAS_F", 75000, "vehicle"],
+	["K40 Ababil-3 Missile UAV", "I_UAV_02_F", 100000, "vehicle"],
+	["K40 Ababil-3 Bomber UAV", "I_UAV_02_CAS_F", 75000, "vehicle"],
+	["KH-3A Fenghuang UAV", "O_T_UAV_04_CAS_F", 100000, "vehicle"],
 	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 1000000, "vehicle"],
 	["A-143 Buzzard CAS", "I_Plane_Fighter_03_CAS_F", 1100000, "vehicle"],
 	["A-164 Wipeout CAS", "B_Plane_CAS_01_F", 1200000, "vehicle"],
@@ -1271,17 +1272,17 @@ customPlayerItems = compileFinal str
 [
 	["Water Bottle", "water", localize "STR_WL_ShopDescriptions_Water", "client\icons\waterbottle.paa", 30, 15],
 	["Canned Food", "cannedfood", localize "STR_WL_ShopDescriptions_CanFood", "client\icons\cannedfood.paa", 30, 15],
-	["LSD", "lsd", localize "STR_WL_ShopDescriptions_LSD", "client\icons\lsd.paa", 10000, 5000],
- 	["Marijuana", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 10000, 5000],
- 	["Cocaine", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 10000, 5000],
- 	["Heroin", "heroin", localize "STR_WL_ShopDescriptions_Heroin", "client\icons\heroin.paa", 10000, 5000],
+	//["LSD", "lsd", localize "STR_WL_ShopDescriptions_LSD", "client\icons\lsd.paa", 10000, 5000],
+ 	//["Marijuana", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 10000, 5000],
+ 	//["Cocaine", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 10000, 5000],
+ 	//["Heroin", "heroin", localize "STR_WL_ShopDescriptions_Heroin", "client\icons\heroin.paa", 10000, 5000],
 	["Repair Kit", "repairkit", localize "STR_WL_ShopDescriptions_RepairKit", "client\icons\briefcase.paa", 500, 250],
 	["Jerry Can (Full)", "jerrycanfull", localize "STR_WL_ShopDescriptions_fuelFull", "client\icons\jerrycan.paa", 150, 75],
 	["Jerry Can (Empty)", "jerrycanempty", localize "STR_WL_ShopDescriptions_fuelEmpty", "client\icons\jerrycan.paa", 50, 25],
 	["Spawn Beacon", "spawnbeacon", localize "STR_WL_ShopDescriptions_spawnBeacon", "client\icons\spawnbeacon.paa", 10000, 5000],
 	["Camo Net", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\camonet.paa", 200, 100],
 	["Syphon Hose", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\syphonhose.paa", 200, 100],
-	["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 100, 50],
+	//["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 100, 50],
 	["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500]
 ];
 
