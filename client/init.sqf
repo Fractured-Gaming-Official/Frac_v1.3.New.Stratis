@@ -158,7 +158,7 @@ A3W_clientSetupComplete = compileFinal "true";
 A3W_scriptThreads pushBack execVM "addons\fpsFix\vehicleManager.sqf";
 A3W_scriptThreads pushBack execVM "addons\Lootspawner\LSclientScan.sqf";
 //frac stuff
-if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
+if(hasInterface) then{[] execVM "addons\statusBar\statusBar.sqf"};
 //[] execVM "addons\disableThermal\disablethermal.sqf";  //disable thermal vision
 //[] execVM "addons\water_edge\functions.sqf";
 //frac stuff
