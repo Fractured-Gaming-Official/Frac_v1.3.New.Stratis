@@ -1,3 +1,25 @@
+﻿Currently being worked on by Shine and Ghostyy
+
+List of addons to be worked on.
+
+[X] Gear Levels
+[X] Status Bar
+[] Toxic Gas
+[] HvT
+[] Hackers/Laptop
+[] Main missions
+[] 3DMarkers.Removal
+[] BreakLock
+[] Beacon Detector
+[] Mine Detector
+[] buryDeadBody
+[] cleanStores
+[] disable Environment
+[] disable Thermal
+[] Arma Info (On connect)
+[] Fast rope
+[] water edge
+
 # A3Wasteland Stratis
 
 A3Wasteland is a survival-like combat sandbox, which incorporates elements of team deathmatch and sector control in one big fun-to-play package. Similar to DayZ, the objectives are to scavenge weapons and vehicles, team up with fellow players, and engage in combat to obtain control of the landscape. Best experienced with 50 or more players. 
