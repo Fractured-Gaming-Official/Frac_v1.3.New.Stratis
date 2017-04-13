@@ -1,24 +1,24 @@
 ﻿Currently being worked on by Shine and Ghostyy
 
-List of addons to be worked on.
+# List of addons to be worked on.
 
-*[X] Gear Levels
-*[X] Status Bar
-*[] Toxic Gas
-*[] HvT
-*[] Hackers/Laptop
-*[] Main missions
-*[] 3DMarkers.Removal
-*[] BreakLock
-*[] Beacon Detector
-*[] Mine Detector
-*[] buryDeadBody
-*[] cleanStores
-*[] disable Environment
-*[] disable Thermal
-*[] Arma Info (On connect)
-*[] Fast rope
-*[] water edge
+* [X] Gear Levels
+* [X] Status Bar
+* [] Toxic Gas
+* [] HvT
+* [] Hackers/Laptop
+* [] Main missions
+* [] 3DMarkers.Removal
+* [] BreakLock
+* [] Beacon Detector
+* [] Mine Detector
+* [] buryDeadBody
+* [] cleanStores
+* [] disable Environment
+* [] disable Thermal
+* [] Arma Info (On connect)
+* [] Fast rope
+* [] water edge
 
 # A3Wasteland Stratis
 
