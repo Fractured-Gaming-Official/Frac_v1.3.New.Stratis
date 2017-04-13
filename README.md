@@ -7,7 +7,7 @@ x64 bit version. extDB3 Required.
 * [X] Gear Levels
 * [X] Status Bar
 * [] Toxic Gas
-* [] HvT
+* [X] HvT
 * [] Hackers/Laptop
 * [] Main missions
 * [] 3DMarkers.Removal
