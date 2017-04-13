@@ -1,5 +1,7 @@
 ﻿Currently being worked on by Shine and Ghostyy
 
+x64 bit version. extDB3 Required.
+
 # List of addons to be worked on.
 
 * [X] Gear Levels
