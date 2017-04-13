@@ -12,7 +12,7 @@ x64 bit version. extDB3 Required.
 * [] Main missions
 * [] 3DMarkers.Removal
 * [] BreakLock
-* [] Beacon Detector
+* [X] Beacon Detector
 * [] Mine Detector
 * [] buryDeadBody
 * [] cleanStores
@@ -21,6 +21,7 @@ x64 bit version. extDB3 Required.
 * [] Arma Info (On connect)
 * [] Fast rope
 * [] water edge
+* [X] View Distance Menu Update
 
 # A3Wasteland Stratis
 
