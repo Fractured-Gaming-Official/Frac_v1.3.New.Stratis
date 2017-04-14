@@ -6,7 +6,7 @@ x64 bit version. extDB3 Required.
 
 * [X] Gear Levels
 * [X] Status Bar
-* [] Toxic Gas
+* [X] Toxic Gas(load-in blur issues?)
 * [X] HvT
 * [] Hackers/Laptop
 * [] Main missions
