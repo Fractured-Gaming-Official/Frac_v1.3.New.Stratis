@@ -198,7 +198,7 @@ staticGunsArray = compileFinal str
 
 throwputArray = compileFinal str
 [
-	// ["Toxic Gas Grenade (Yellow)", "SmokeShellYellow", 750],
+	["Toxic Gas Grenade (Yellow)", "SmokeShellYellow", 750],
 	["RGN Mini Grenade", "MiniGrenade", 350],
 	["RGO Frag Grenade", "HandGrenade", 500],
 	["APERS Tripwire Mine", "APERSTripMine_Wire_Mag", 400],
@@ -284,8 +284,8 @@ ammoArray = compileFinal str
 	["Titan Anti-Air Missile", "Titan_AA", 4000],              // Direct damage: low       | Splash damage: medium | Guidance: aircraft
 	["40mm HE Grenade Round", "1Rnd_HE_Grenade_shell", 125],
 	["40mm 3Rnd HE Grenades", "3Rnd_HE_Grenade_shell", 250],
-    // ["40mm Toxic Gas", "1Rnd_SmokeYellow_Grenade_shell", 1000],
-	//["40mm 3Rnd Toxic Gas)", "3Rnd_SmokeYellow_Grenade_shell", 1500],
+    ["40mm Toxic Gas", "1Rnd_SmokeYellow_Grenade_shell", 1000],
+	["40mm 3Rnd Toxic Gas)", "3Rnd_SmokeYellow_Grenade_shell", 1500],
 	["40mm Smoke Round (White)", "1Rnd_Smoke_Grenade_shell", 50],
 	["40mm Smoke Round (Purple)", "1Rnd_SmokePurple_Grenade_shell", 50],
 	["40mm Smoke Round (Blue)", "1Rnd_SmokeBlue_Grenade_shell", 50],
