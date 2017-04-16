@@ -20,7 +20,8 @@ _setupVars =
 		"B_Heli_Attack_01_F",
 		"O_Heli_Light_02_F",
 		"O_Heli_Attack_02_F",
-		"I_Heli_light_03_F"
+		"I_Heli_light_03_F",
+		"O_T_VTOL_02_infantry_F"
 	] call BIS_fnc_selectRandom;
 
 	_missionType = "Armed Helicopter";
