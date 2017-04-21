@@ -70,6 +70,8 @@ briefing = 0; // if 0, skip Continue button
 #include "addons\parking\list_simple_menu.hpp"
 #include "addons\taw_vd\dialog.hpp"
 #include "addons\beacondetector\sound\cfgsounds.hpp"
+#include "addons\TOParmaInfo\dialog\TOParmaInfo_dialog.hpp"
+
 
 class RscTitles
 {

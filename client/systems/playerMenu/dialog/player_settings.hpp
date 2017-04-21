@@ -197,5 +197,12 @@ class playerSettings {
 			x = 0.02; y = 0.57;
 			w = 0.125; h = 0.033 * safezoneH;
 		};*/
+		class TOParmaInfoButton : w_RscButton {
+			idc = 1;
+			text = "TOParma.com Info";
+			onButtonClick = "[] execVM 'addons\TOParmaInfo\loadToparmaInfo.sqf'";
+			x = 0.228; y = 0.254;
+			w = 0.225; h = 0.033 * safezoneH;
+		};
 	};
 };
