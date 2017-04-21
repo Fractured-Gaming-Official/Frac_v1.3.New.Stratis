@@ -18,7 +18,7 @@ x64 bit version. extDB3 Required.
 * [] cleanStores
 * [] disable Environment
 * [] disable Thermal
-* [] Arma Info (On connect)
+* [X] Arma Info (On connect)
 * [] Fast rope
 * [] water edge
 * [X] View Distance Menu Update
