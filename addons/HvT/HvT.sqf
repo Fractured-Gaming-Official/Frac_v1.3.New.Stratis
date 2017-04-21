@@ -50,7 +50,7 @@ while {true} do
 		{
 			createMarker [_markerName, getPosWorld player];
 			_markerName setMarkerColor "ColorRed";
-			_markerName setMarkerText format [" HVT: %1 ($%2k)", profileName, (floor ((player getVariable ["cmoney",0]) / 1000)) call fn_numToStr];
+			_markerName setMarkerText format [" Sugar Daddy: %1 ($%2k)", profileName, (floor ((player getVariable ["cmoney",0]) / 1000)) call fn_numToStr];
 			_markerName setMarkerSize [0.75, 0.75];
 			_markerName setMarkerShape "ICON";
 			_markerName setMarkerType "mil_warning";
