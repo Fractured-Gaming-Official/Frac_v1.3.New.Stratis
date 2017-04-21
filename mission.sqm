@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=40;
+		nextID=42;
 	};
 	class Camera
 	{
-		pos[]={5836.0732,285.91257,5430.7676};
-		dir[]={0.76026177,-0.49500847,-0.42086777};
-		up[]={0.43325487,0.86874616,-0.23984472};
-		aside[]={-0.48436844,-1.3222743e-006,-0.8749547};
+		pos[]={4587.9268,144.75551,5268.2563};
+		dir[]={0.9299289,-0.30180854,0.21059889};
+		up[]={0.29462764,0.95325059,0.066722326};
+		aside[]={0.22089241,-3.0017618e-006,-0.97540718};
 	};
 };
 binarizationWanted=0;
@@ -7260,7 +7260,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2971.6853,175.27539,1874.1979};
-				angles[]={-0,3.120059,0};
+				angles[]={0,3.120059,0};
 			};
 			side="Empty";
 			flags=4;
@@ -8019,7 +8019,7 @@ class Mission
 			};
 			id=529;
 			type="Land_MetalBarrel_F";
-			atlOffset=-0.039382935;
+			atlOffset=-0.039367676;
 		};
 		class Item371
 		{
@@ -9120,7 +9120,7 @@ class Mission
 					name="Parking1_spawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=222.76895;
+					angle=222.76894;
 					id=597;
 				};
 				class Item8
@@ -9644,7 +9644,7 @@ class Mission
 					};
 					id=624;
 					type="C_man_1_1_F";
-					atlOffset=0.30299997;
+					atlOffset=0.30299902;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9674,7 +9674,7 @@ class Mission
 			{
 			};
 			id=623;
-			atlOffset=0.30299997;
+			atlOffset=0.30299902;
 		};
 		class Item439
 		{
@@ -13200,17 +13200,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1974.9061,7.5869379,6041.3364};
+				position[]={1974.9061,4.5202756,6041.3364};
 				angles[]={0,4.2361259,0};
 			};
 			side="Empty";
-			flags=1;
+			flags=5;
 			class Attributes
 			{
 			};
 			id=954;
 			type="Land_LifeguardTower_01_F";
-			atlOffset=3.0666623;
 		};
 		class Item652
 		{
