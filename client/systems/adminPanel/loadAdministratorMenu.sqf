@@ -10,7 +10,7 @@
 #define adminMenu_option 50001
 disableSerialization;
 
-private ["_start","_panelOptions","_adminSelect","_displayAdmin"];
+private ["_start","_panelOptions","_displayAdmin","_adminSelect"];
 _uid = getPlayerUID player;
 if ([_uid, 2] call isAdmin) then {
 	_start = createDialog "AdminMenu";
