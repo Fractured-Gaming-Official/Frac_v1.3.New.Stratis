@@ -29,7 +29,6 @@ if ((getPlayerUID player) call isAdmin) then
 		pvar_isAdminInvisible = [_player, _curPlayerInvisState];
 		publicVariable "pvar_isAdminInvisible";
 		hint "You are now invisible";
-		if (!isNil "notifyAdminMenu") then { ["Invisibility", "On"] call notifyAdminMenu };
 	}
 	else
 	{
@@ -39,6 +38,5 @@ if ((getPlayerUID player) call isAdmin) then
 		pvar_isAdminInvisible = [_player, _curPlayerInvisState];
 		publicVariable "pvar_isAdminInvisible";
 		hint "You are no longer invisible";
-		if (!isNil "notifyAdminMenu") then { ["Invisibility", "Off"] call notifyAdminMenu };
 	};
 }

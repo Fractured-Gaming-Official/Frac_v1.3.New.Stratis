@@ -100,7 +100,7 @@ if (_uid call isAdmin) then
 				{
 					execVM "client\systems\adminPanel\toggleGodMode.sqf";
 				};
-				case 11: // toggle Invis mode
+				case 12: // toggle Invis mode
 				{
 					execVM "client\systems\adminPanel\toggleInvisMode.sqf";
 					//Is logged from inside target script
