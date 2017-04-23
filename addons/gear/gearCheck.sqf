@@ -71,14 +71,14 @@ switch (_gearLevel) do
    {
 		player execVM "addons\gear\gearLevel9.sqf"; 
 		sleep 5;
-		hint "Congrats! Final Gear Level Loaded!";
+		hint "Congrats! Your Level 9 gear loaded!";
    };
 
     case 10:
    {
 		player execVM "addons\gear\gearLevel10.sqf"; 
 		sleep 5;
-		hint "Congrats! Final Gear Level Loaded!";
+		hint "Congrats! Your Level 10 gear loaded!";
    };
  
     case 11:
