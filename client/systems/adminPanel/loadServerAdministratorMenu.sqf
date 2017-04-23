@@ -30,7 +30,7 @@ if ([_uid, 3] call isAdmin) then {
 	                "Debug Menu",
 					"Object Search",
 	                "Toggle God-mode",
-					"Toggle Invis-mode"
+					"Toggle Invisible-mode"
 	];
 
 	{

@@ -51,12 +51,7 @@ if (_uid call isAdmin) then
 					execVM "client\systems\adminPanel\unstuck.sqf";
 					if (!isNil "notifyAdminMenu") then { ["UnstuckPlayer", "Used"] call notifyAdminMenu };
 				};
-				case 4: //Tags
-				{
-					execVM "client\systems\adminPanel\playerTags.sqf";
-					//Is logged from inside target script
-				};
-				case 5: //Teleport
+				case 4: //Teleport
 				{
 					closeDialog 0;
 					["A3W_teleport", "onMapSingleClick",
@@ -68,23 +63,28 @@ if (_uid call isAdmin) then
 					}] call BIS_fnc_addStackedEventHandler;
 					hint "Click on map to teleport";
 				};
-				case 6: //Teleport player to me
+				case 5: //Teleport player to me
 				{
 					closeDialog 0;
 					execVM "client\systems\adminPanel\tptome.sqf";
 					if (!isNil "notifyAdminMenu") then { ["TeleportToMe", "Used"] call notifyAdminMenu };
 				};
-				case 7: //Teleport me to player
+				case 6: //Teleport me to player
 				{
 					closeDialog 0;
 					execVM "client\systems\adminPanel\tpmeto.sqf";
 					if (!isNil "notifyAdminMenu") then { ["TeleportMeTo", "Used"] call notifyAdminMenu };
 				};
-				case 8: //Money
+				case 7: //Money
 				{
 					_money = 5000;
 					player setVariable ["cmoney", (player getVariable ["cmoney",0]) + _money, true];
 					if (!isNil "notifyAdminMenu") then { ["money", _money] call notifyAdminMenu };
+				};
+				case 8: //Tags
+				{
+					execVM "client\systems\adminPanel\playerTags.sqf";
+					//Is logged from inside target script
 				};
 				case 9: //Debug Menu
 				{
