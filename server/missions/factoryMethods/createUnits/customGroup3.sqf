@@ -42,5 +42,7 @@ for "_i" from 1 to _nbUnits do
 };
 // after group 1 unit, before commands/waypoints/etc...
 //[_group,HC1] call moveToHC;
+
+[_unit] call randomSoldierLoadOut;
  
 [_group, _pos] call defendArea;
