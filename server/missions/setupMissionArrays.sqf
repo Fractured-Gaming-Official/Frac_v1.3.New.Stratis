@@ -25,10 +25,13 @@ SideMissions =
 [
 	["mission_HostileHelicopter", 0.5],
 	["mission_MiniConvoy", 1],
-	["mission_SunkenSupplies", 1],
+	["mission_SunkenSupplies", .5],
 	["mission_TownInvasion", 2],
-	["mission_Outpost", 3],
-	["mission_Truck", 1]
+	["mission_Outpost", 2],
+	["mission_Truck", 1],
+	["mission_AirWreck", 2],
+	["mission_geoCache", 1]
+	
 ];
 
 MoneyMissions =
@@ -45,7 +48,6 @@ if !(ForestMissionMarkers isEqualTo []) then
 {
 	SideMissions append
 	[
-		["mission_AirWreck", 3],
 		["mission_WepCache", 3]
 	];
 };
