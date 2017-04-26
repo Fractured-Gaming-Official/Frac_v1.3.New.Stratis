@@ -8,7 +8,7 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=1064;
+		nextID=1066;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=44;
+		nextID=48;
 	};
 	class Camera
 	{
-		pos[]={3009.2644,48.955482,6193.688};
-		dir[]={-0.58206892,-0.59858257,0.5505501};
-		up[]={-0.43501255,0.80087823,0.41145712};
-		aside[]={0.68724138,-1.0926742e-006,0.72657907};
+		pos[]={2675.0767,36.122002,1207.2101};
+		dir[]={0.0077766925,-0.65708792,0.75378048};
+		up[]={0.0067790281,0.75377357,0.65709829};
+		aside[]={0.99995077,-3.2890512e-008,-0.010316431};
 	};
 };
 binarizationWanted=0;
@@ -3255,7 +3255,7 @@ class Mission
 						angles[]={0,5.4362135,0};
 					};
 					side="Civilian";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="[this] spawn A3W_fnc_setupStoreNPC";
@@ -3263,14 +3263,14 @@ class Mission
 					};
 					id=193;
 					type="C_man_1_1_F";
-					atlOffset=3.5899963;
+					atlOffset=0.22163391;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=192;
-			atlOffset=3.5899963;
+			atlOffset=0.22163391;
 		};
 		class Item44
 		{
@@ -7126,17 +7126,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2659.0034,16.529993,1227.7175};
-				angles[]={0,1.0395373,0};
+				position[]={2659.0029,16.530067,1227.718};
+				angles[]={0,1.0395355,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="[this, true, true] call A3W_fnc_setupMissionObject";
+				init="[this, true, true] call A3W_fnc_setupMissionObject; this allowDamage false;";
 			};
 			id=477;
 			type="Land_i_Stone_HouseBig_V1_F";
-			atlOffset=1.6420498;
+			atlOffset=1.6420002;
 		};
 		class Item321
 		{
@@ -9112,7 +9112,7 @@ class Mission
 					name="Parking1_spawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=222.76892;
+					angle=222.76889;
 					id=597;
 				};
 				class Item8
@@ -9356,7 +9356,7 @@ class Mission
 					};
 					id=614;
 					type="C_man_1_1_F";
-					atlOffset=0.11267662;
+					atlOffset=0.11260033;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9386,7 +9386,7 @@ class Mission
 			{
 			};
 			id=613;
-			atlOffset=0.11267662;
+			atlOffset=0.11260033;
 		};
 		class Item434
 		{
@@ -9636,7 +9636,7 @@ class Mission
 					};
 					id=624;
 					type="C_man_1_1_F";
-					atlOffset=0.30299997;
+					atlOffset=0.30299902;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9666,7 +9666,7 @@ class Mission
 			{
 			};
 			id=623;
-			atlOffset=0.30299997;
+			atlOffset=0.30299902;
 		};
 		class Item439
 		{
