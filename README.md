@@ -9,13 +9,13 @@ x64 bit version. extDB3 Required.
 * [X] Toxic Gas(load-in blur issues?)
 * [X] HvT
 * [X] Hackers/Laptop
-* [] Main missions
+* [X] Main missions(ish)
 * [] 3DMarkers.Removal
 * [] BreakLock
 * [X] Beacon Detector
 * [X] Mine Detector
-* [] buryDeadBody
-* [] cleanStores
+* [X] buryDeadBody
+* [X] cleanStores
 * [] disable Environment
 * [X] disable Thermal
 * [X] Arma Info (On connect)
