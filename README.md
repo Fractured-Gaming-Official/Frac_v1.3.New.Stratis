@@ -14,7 +14,7 @@ x64 bit version. extDB3 Required.
 * [] BreakLock
 * [X] Beacon Detector
 * [X] Mine Detector
-* [X] buryDeadBody
+* [X] buryDeadBody(fixed)
 * [X] cleanStores
 * [] disable Environment
 * [X] disable Thermal
@@ -22,6 +22,7 @@ x64 bit version. extDB3 Required.
 * [] Fast rope
 * [] water edge
 * [X] View Distance Menu Update
+* [X] OutofBounds activated
 
 # A3Wasteland Stratis
 
