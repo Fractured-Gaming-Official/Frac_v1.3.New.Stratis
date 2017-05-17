@@ -17,11 +17,68 @@
 	along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 	----------------------------------------------------------------------------------------------
+
+	Name: buryDeadBody.sqf
+	Version: 1.0.5
+	Author: soulkobk (soulkobk.blogspot.com) (base script authors MercyfulFate, AgentRev, Gigatek)
+	Creation Date: 12:47 PM 29/10/2016
+	Modification Date: 7:38 PM 23/12/2016
+
+	Description:
+	For use with A3Wasteland 1.Xx mission (A3Wasteland.com). The script adds a 'Bury Dead Body'
+	action to dead bodies for a COST set in the header of this script (default $5000 of CARRIED
+	money). The action will remove dead bodies and immediate surrounding (< 2 meters) dropped items.
+	
+	Place this file at...
+	\addons\buryDeadBody\buryDeadBody.sqf
+	
+	Place the buryDeadBody.paa icon at...
+	\addons\buryDeadBody\buryDeadBody.paa
+	
+	Edit file...
+	\client\functions\playerActions.sqf
+	
+	And paste in...
+	["<img image='addons\buryDeadBody\buryDeadBody.paa'/> Bury Dead Body", "addons\buryDeadBody\buryDeadBody.sqf", [], 1.1, false, false, "", "!(([allDeadMen,[],{player distance _x},'ASCEND',{((player distance _x) < 2) && !(_x getVariable ['buryDeadBodyBurried',false])}] call BIS_fnc_sortBy) isEqualTo [])"],
+	
+	Above the line...
+	[format ["<img image='client\icons\playerMenu.paa' color='%1'/>.......
+
+	Parameter(s): NONE
+
+	Example: NONE
+
+	Change Log:
+	1.0.0 -	original base script. all credit to original authors of base script.
+	1.0.1 -	updated setVariable to global, line 91 and 131.
+	1.0.2 -	updated enableSimulationGlobal function for server-side execution and updated
+			deleteVehicle to use objectFromNetId.
+	1.0.3 -	changed all cursorObject to cursorTarget for more consistant error checking
+			(playerActions.sqf entry also updated).
+	1.0.4 -	redid closest dead body check (addAction and script). script now uses proximity
+			(BIS_fnc_sortBy) which is much more consistent for accessing dead bodies.
+	1.0.5 -	changed animation loop to action "hideBody" and removed some unneeded code.
+
+	----------------------------------------------------------------------------------------------
 */
 
 _price = 2500;
-_duration = (round (random 15)) + 15;
+_duration = (round (random 30)) + 30;
 _animation = "AinvPknlMstpSlayWrflDnon_medic";
+
+_cleanUpObjects = [
+	"Land_Suitcase_F", // Repair Kit
+	"Land_BakedBeans_F", // Canned Food
+	"Land_BottlePlastic_V2_F", // Water Bottle
+	"Land_Sleeping_bag_folded_F", // Spawn Beacon
+	"Land_CanisterFuel_F", // Jerrycan
+	"Land_CanisterOil_F", // Syphon Hose
+	"Land_Ground_sheet_folded_OPFOR_F", // Camo Net
+	"GroundWeaponHolder", // static weapon holder, all weapons, weapon attachments, magazines, throwables, backpacks, vests, uniforms, helments, etc
+	"WeaponHolderSimulated" // simulated weapon holder, all weapons, weapon attachments, magazines, throwables, backpacks, vests, uniforms, helments, etc
+];
+
+_maxObjectDistanceGather = 3; // max distance from dead body to gather and delete items.
 
 /*	------------------------------------------------------------------------------------------
 	DO NOT EDIT BELOW HERE!
@@ -33,7 +90,7 @@ _animation = "AinvPknlMstpSlayWrflDnon_medic";
 #define ERR_ALIVE "This Is No Dead Body!"
 #define ERR_CANCELLED "Burying Dead Body Cancelled!"
 
-private _deadBody = cursorObject;
+private _deadBody = ([allDeadMen,[],{player distance _x},"ASCEND",{(player distance _x) < 3}] call BIS_fnc_sortBy) select 0;
 
 if ((alive _deadBody) && !(_deadBody isKindOf "Man")) exitWith {};
 
@@ -91,37 +148,33 @@ private _outcome = [_duration, _animation, _checks, [_deadBody]] call a3w_action
 
 if (_outcome) then
 {
-	["Burying Of Dead Body Successful!", 5] call mf_notify_client;
 	_deadBody setVariable ["buryDeadBodyBurried",true,true];
 	player setVariable ["cmoney",(_playerCMoney - _price),true];
-	_deadBodyObjects = nearestObjects [_deadBody, ["GroundWeaponHolder","WeaponHolderSimulated"], 2];
+	_deadBodyObjects = nearestObjects [_deadBody, _cleanUpObjects, _maxObjectDistanceGather];
 	{
 		deleteVehicle objectFromNetId (netID _x);
 	} forEach _deadBodyObjects;
-	pvar_enableSimulationGlobal = [_deadBody,false];
-	publicVariableServer "pvar_enableSimulationGlobal";
 	uiSleep 0.5;
-	_deadBodyPos = getPosATL _deadBody;
+	player action ["hideBody",_deadBody];
+	_buryTime = time + 5;
+	waitUntil {time > _buryTime};
 	_deadBodyLoop = 0;
 	while {(!isNull _deadBody) || (_deadBodyLoop < 50)} do
 	{
-		for "_i" from (_deadBodyPos select 2) to ((_deadBodyPos select 2) - 0.5) step -0.01 do
-		{
-			_deadBodyPos set [2,_i];
-			_deadBody setPosATL _deadBodyPos;
-			uiSleep 0.1;
-		};
 		deleteVehicle objectFromNetId (netID _deadBody);
 		_deadBodyLoop = _deadBodyLoop + 1;
-		uiSleep 0.5;
+		uiSleep 0.1;
 	};
 	if (!isNull _deadBody) then
 	{
 		["Someone Dug Up The Dead Body, You Get A Refund!", 5] call mf_notify_client;
-		pvar_enableSimulationGlobal = [_deadBody,true];
-		publicVariableServer "pvar_enableSimulationGlobal";
+		_deadBody setVariable ["buryDeadBodyBurried",nil,true];
 		uiSleep 0.5;
 		player setVariable ["cmoney",(_playerCMoney + _price),true];
+	}
+	else
+	{
+		["Burying Of Dead Body Successful!", 5] call mf_notify_client;
 	};
 };
 
