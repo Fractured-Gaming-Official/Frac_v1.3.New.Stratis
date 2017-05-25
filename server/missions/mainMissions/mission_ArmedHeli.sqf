@@ -13,16 +13,15 @@ private ["_vehicleClass", "_nbUnits"];
 
 _setupVars =
 {
-	_vehicleClass =
+	_vehicleClass = selectRandom
 	[
-		"B_Heli_Light_01_armed_F",
+		["B_Heli_Light_01_dynamicLoadout_F", "pawneeNormal"],
 		"B_Heli_Transport_01_F",
-		"B_Heli_Attack_01_F",
-		"O_Heli_Light_02_F",
-		"O_Heli_Attack_02_F",
-		"I_Heli_light_03_F",
-		"O_T_VTOL_02_infantry_F"
-	] call BIS_fnc_selectRandom;
+		"B_Heli_Attack_01_dynamicLoadout_F",
+		["O_Heli_Light_02_dynamicLoadout_F", "orcaDAGR"],
+		"O_Heli_Attack_02_dynamicLoadout_F",
+		"I_Heli_light_03_dynamicLoadout_F"
+	];
 
 	_missionType = "Armed Helicopter";
 	_locationsArray = MissionSpawnMarkers;

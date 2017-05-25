@@ -7,6 +7,7 @@
 // remoteExec & BIS_fnc_MP functions whitelist (client only, server calls are not filtered)
 
 // BIS
+class BIS_fnc_debugConsoleExec {}; // secure function made by Killzone Kid for BIS, only works for logged-in admins
 class BIS_fnc_effectKilledAirDestruction {};
 class BIS_fnc_effectKilledSecondaries {};
 class BIS_fnc_objectVar {};

@@ -46,9 +46,6 @@ if (hasInterface) then
 		case (["VehStore", _npcName] call _startsWith):
 		{
 			_npc addAction ["<img image='client\icons\store.paa'/> Open Vehicle Store", "client\systems\vehicleStore\loadVehicleStore.sqf", [], 1, true, true, "", STORE_ACTION_CONDITION];
-		    _npc addAction ["<img image='client\icons\repair.paa'/> Service Vehicle", "client\systems\selling\serviceVehicle.sqf", [], 0.97, false, true, "", STORE_ACTION_CONDITION + " && " + SELL_VEH_CONTENTS_CONDITION];
-			_npc addAction ["<img image='client\icons\r3f_unlock.paa'/> License Vehicle", "client\systems\selling\licenseVehicle.sqf", [], 0.97, false, true, "", STORE_ACTION_CONDITION + " && " + SELL_VEH_CONTENTS_CONDITION];
-			_npc addAction ["<img image='client\icons\money.paa'/> Sell Vehicle", "client\systems\selling\sellVehicle.sqf", [], 0.97, false, true, "", STORE_ACTION_CONDITION + " && " + SELL_VEH_CONTENTS_CONDITION];
 		};
 	};
 
@@ -205,8 +202,6 @@ if (isServer) then
 			_desk = [_npc, _bPos, _pDir, _deskDirMod] call _createStoreFurniture;
 			_npc setVariable ["storeNPC_cashDesk", netId _desk, true];
 
-			sleep 1;
-
 			_bbNPC = boundingBoxReal _npc;
 			_bbDesk = boundingBoxReal _desk;
 			_bcNPC = boundingCenter _npc;
@@ -214,30 +209,25 @@ if (isServer) then
 
 			_npcHeightRel = (_desk worldToModel ASLtoAGL getPosASL _npc) select 2;
 
-			// must be done twice for the direction to set properly
-			for "_i" from 1 to 2 do
-			{
-				_npc attachTo
-				[
-					_desk,
-					[
-						0,
+			_npc setPosASL AGLtoASL (_desk modelToWorld
+			[
+				0,
 
-						((_bcNPC select 1) - (_bcDesk select 1)) +
-						((_bbNPC select 1 select 1) - (_bcNPC select 1)) -
-						((_bbDesk select 1 select 1) - (_bcDesk select 1)) + 0.1,
+				((_bcNPC select 1) - (_bcDesk select 1)) +
+				((_bbNPC select 1 select 1) - (_bcNPC select 1)) -
+				((_bbDesk select 1 select 1) - (_bcDesk select 1)) + 0.1,
 
-						_npcHeightRel
-					]
-				];
-				_npc setDir 180;
-			};
+				_npcHeightRel
+			]);
 
-			detach _npc;
+			_npc setDir _deskDirMod;
 			sleep 1;
-
 			_npc enableSimulation false;
-			_desk enableSimulationGlobal false;
+
+			private _finalDeskPos = getPosASL _desk;
+			_finalDeskPos set [2, (_finalDeskPos select 2) + ((getPosASL _npc select 2) - (_finalDeskPos select 2))];
+			_desk setPosASL _finalDeskPos;
+			//_desk enableSimulationGlobal false;
 		};
 	} forEach (call storeOwnerConfig);
 };
