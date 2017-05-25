@@ -20,7 +20,7 @@
 */
 
 _maxTime = 20; // 20 seconds max default
-_maxHeight = 1500; // 1500m height max default
+_maxHeight = 2500; // 1500m height max default
 
 /*	------------------------------------------------------------------------------------------
 	DO NOT EDIT BELOW HERE!
