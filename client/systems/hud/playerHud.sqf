@@ -342,6 +342,6 @@ while {true} do
 		showChat true;
 	};
 
-	enableEnvironment [false, true];
+	
 	uiSleep 1;
 };
