@@ -190,7 +190,12 @@ _successExec =
 	_box3 setDir random 360;
 	[_box3, "mission_Main_A3snipers"] call fn_refillbox;
 
-	_successHintMessage = "The patrol has been stopped, the ammo crates are yours to take. Find them near the wreck!";
+	_mortar = createVehicle ["I_Mortar_01_F", _lastPos, [], 5, "None"];
+	_mortar setVariable ["R3F_LOG_Disabled", false, true];
+	_mortar setDir random 360;
+	
+	_successHintMessage = "The patrol has been stopped, the ammo crates and mortar are yours to take. Find them near the wreck!";
+
 };
 
 _this call mainMissionProcessor;
