@@ -281,7 +281,7 @@ ammoArray = compileFinal str
 	["9.3mm 150Rnd Belt", "150Rnd_93x64_Mag", 1500],
 	[".408 7Rnd Cheetah Mag", "7Rnd_408_Mag", 700],
 	["12.7mm 5Rnd Mag", "5Rnd_127x108_Mag", 500],
-	["12.7mm 5Rnd Armor-Piercing Mag", "5Rnd_127x108_APDS_Mag", 1000],
+	["12.7mm 5Rnd Armor-Piercing Mag", "5Rnd_127x108_APDS_Mag", 700],
 	["12.7mm 10Rnd Subsonic Mag", "10Rnd_127x54_Mag", 75],
 	[".50 BW 10Rnd Mag", "10Rnd_50BW_Mag_F", 1000],
 	["PG-7VM HEAT Grenade", "RPG7_F", 500],                   // Direct damage: medium    | Splash damage: low    | Guidance: none
@@ -393,9 +393,9 @@ accessoriesArray = compileFinal str
 	["LRPS (G Hex)", "optic_LRPS_ghex_F", 300, "item"],
 	["LRPS (Tropic)", "optic_LRPS_tna_F", 300, "item"],
 	["NVS", "optic_NVS", 500, "item"],
-	["TWS", "optic_tws", 50000, "item", "HIDDEN"], // To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
-	["TWS MG", "optic_tws_mg", 60000, "item", "HIDDEN"],
-	["Nightstalker", "optic_Nightstalker", 75000, "item", "HIDDEN"]
+	["TWS", "optic_tws", 100000, "item", "HIDDEN"], // To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
+	["TWS MG", "optic_tws_mg", 150000, "item", "HIDDEN"],
+	["Nightstalker", "optic_Nightstalker", 200000, "item", "HIDDEN"]
 ];
 
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
