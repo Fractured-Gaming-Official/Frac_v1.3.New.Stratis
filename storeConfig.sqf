@@ -970,8 +970,9 @@ helicoptersArray = compileFinal str
 	["WY-55 Hellcat (Armed)", "I_Heli_light_03_dynamicLoadout_F", 55000, "vehicle"], // Armed AW159
 	["AH-99 Blackfoot", "B_Heli_Attack_01_dynamicLoadout_F", 200000, "vehicle"], // RAH-66 with gunner
 	["Mi-48 Kajman", "O_Heli_Attack_02_dynamicLoadout_F", 250000, "vehicle"], // Mi-28 with gunner 
+	["Y-32 Xi'an", "O_T_VTOL_02_infantry_dynamicLoadout_F", 200000, "vehicle"],
 
-	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 200000, "vehicle"] // Do NOT use "B_T_UAV_03_dynamicLoadout_F" (doesn't support ASRAAM pylons)
+	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 150000, "vehicle"] // Do NOT use "B_T_UAV_03_dynamicLoadout_F" (doesn't support ASRAAM pylons)
 ];
 
 planesArray = compileFinal str

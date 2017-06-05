@@ -9,9 +9,9 @@
 // starting positions for this route
 _starts =
 [
-	[2621, 4929],
-	[2615, 4906],
-	[2587, 4942]
+	[2162, 4730],
+	[2158, 4721],
+	[2140, 4752]
 ];
 
 // starting directions in which the vehicles are spawned on this route
@@ -25,10 +25,10 @@ _startDirs =
 // the route
 _waypoints =
 [
-	[2901, 4944],
-	[3361, 4918],
-	[3760, 4759],
-	[3833, 4678],
+	[2365, 4600],
+	[3354, 4435],
+	[3803, 4641],
+	[4133, 4548],
 	[4405, 4399],
 	[5025, 4529],
 	[5353, 3786]
