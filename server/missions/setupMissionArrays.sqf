@@ -10,7 +10,7 @@ MainMissions =
 [
 	// Mission filename, weight
 	["mission_ArmedDiversquad", 1],
-	["mission_Coastal_Convoy", 1],
+	["mission_Coastal_Convoy", .75],
 	["mission_Convoy", 1],
 	["mission_HostileHeliFormation", 0.75],
 	["mission_APC", 1],
@@ -31,7 +31,8 @@ SideMissions =
 	["mission_Outpost", 2],
 	["mission_Truck", 1],
 	["mission_AirWreck", 2],
-	["mission_geoCache", 1]
+	["mission_geoCache", 1],
+	["mission_HostileJet", 0.5]
 	
 ];
 
