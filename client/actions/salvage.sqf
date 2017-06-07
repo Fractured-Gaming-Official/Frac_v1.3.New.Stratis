@@ -117,7 +117,7 @@ if (_variant != "") then { _variant = "variant_" + _variant };
 {
 	if (_x select 1 == _vehClass && (_variant == "" || {_variant in _x})) exitWith
 	{
-		_money = GET_ONE_TENTH_PRICE(_x select 2);
+		_money = GET_HALF_PRICE(_x select 2);
 	};
 } forEach call allVehStoreVehicles;
 
