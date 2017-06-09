@@ -1,7 +1,7 @@
 // ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
-//	@file Name: mission_HostileHelicopter.sqf
+//	@file Name: mission_HostileJet.sqf
 //	@file Author: JoSchaap, AgentRev
 
 if (!isServer) exitwith {};
@@ -21,11 +21,11 @@ _setupObjects =
 
 	_vehicleClass = if (missionDifficultyHard) then
 	{
-		selectRandom ["B_Plane_CAS_01_F", "O_Plane_CAS_02_F", "O_T_VTOL_02_infantry_F"];
+		selectRandom [""B_Plane_CAS_01_dynamicLoadout_F", "O_Plane_CAS_02_dynamicLoadout_F", "O_T_VTOL_02_infantry_dynamicLoadout_F"];
 	}
 	else
 	{
-		selectRandom ["B_Plane_CAS_01_F", "O_Plane_CAS_02_F", "O_T_VTOL_02_infantry_F"];
+		selectRandom [""B_Plane_CAS_01_dynamicLoadout_F", "O_Plane_CAS_02_dynamicLoadout_F", "O_T_VTOL_02_infantry_dynamicLoadout_F"];
 	};
 
 	_createVehicle =
