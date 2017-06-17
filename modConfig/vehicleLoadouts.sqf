@@ -21,7 +21,11 @@ switch (true) do
 		switch (_variant) do
 		{
 			case "pawneeGun": { _pylons = ["",""] };
+			case "PawneeShriek": { _pylons = ["PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_AP_F"] };
 			default           { _pylons = ["PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles"] };
+			
+				
+			
 		};
 	};
 
@@ -157,17 +161,74 @@ switch (true) do
 	{
 		switch (_variant) do
 		{
-			case "greyhawkBomber": { _pylons = ["PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F"] };
+			case "greyhawkBomber": {_pylons = ["PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F"]};
 			default
 			{
-				_pylons = ["PylonRack_3Rnd_LG_scalpel","PylonRack_3Rnd_LG_scalpel"];
 				_customCode =
 				{
-					_veh setAmmoOnPylon [1, 2]; // right wing
-					_veh setAmmoOnPylon [2, 2]; // left wing
+					_veh setAmmoOnPylon [1, 3]; // right wing
+					_veh setAmmoOnPylon [2, 3]; // left wing
+					
 				};
 			};
 		};
+	};
+	// Greyhawk Bomber UAV
+	case (_class isKindOf "B_UAV_02_CAS_F"):
+	{
+		_mags =
+		[
+			["120Rnd_CMFlare_Chaff_Magazine", [-1]],
+			["magazine_Fighter02_Gun30mm_AA_x180", [0]],
+			["magazine_Fighter02_Gun30mm_AA_x180", [0]],
+			["2Rnd_GBU12_LGB_MI10", [0]],
+			["Laserbatteries", [0]]
+		];
+		_weapons =
+		[
+			["CMFlareLauncher", [-1]],
+			["weapon_Fighter_Gun_30mm", [0]],
+			["GBU12BombLauncher", [0]],
+			["Laserdesignator_mounted", [0]]
+		];
+	};
+	// Ababil Bomber UAV
+	case (_class isKindOf "O_UAV_02_CAS_F"):
+	{
+		_mags =
+		[
+			["120Rnd_CMFlare_Chaff_Magazine", [-1]],
+			["magazine_Fighter02_Gun30mm_AA_x180", [0]],
+			["magazine_Fighter02_Gun30mm_AA_x180", [0]],
+			["2Rnd_GBU12_LGB_MI10", [0]],
+			["Laserbatteries", [0]]
+		];
+		_weapons =
+		[
+			["CMFlareLauncher", [-1]],
+			["weapon_Fighter_Gun_30mm", [0]],
+			["GBU12BombLauncher", [0]],
+			["Laserdesignator_mounted", [0]]
+		];
+	};
+	// Ababil Bomber UAV
+	case (_class isKindOf "I_UAV_02_CAS_F"):
+	{
+		_mags =
+		[
+			["120Rnd_CMFlare_Chaff_Magazine", [-1]],
+			["magazine_Fighter02_Gun30mm_AA_x180", [0]],
+			["magazine_Fighter02_Gun30mm_AA_x180", [0]],
+			["2Rnd_GBU12_LGB_MI10", [0]],
+			["Laserbatteries", [0]]
+		];
+		_weapons =
+		[
+			["CMFlareLauncher", [-1]],
+			["weapon_Fighter_Gun_30mm", [0]],
+			["GBU12BombLauncher", [0]],
+			["Laserdesignator_mounted", [0]]
+		];
 	};
 
 	// KH-3A Fenghuang UAV
@@ -209,6 +270,23 @@ switch (true) do
 			["missiles_SCALPEL", [0]],
 			["missiles_ASRAAM", [0]],
 			["Laserdesignator_mounted", [0]]
+		];
+	};
+};// Ceasar (non-dynamicLoadout)
+	case (_class isKindOf "C_Plane_Civil_01_racing_F"):
+	{
+		_mags =
+		[
+			
+			["1000Rnd_65x39_Belt_Green", [-1]],
+			["1000Rnd_65x39_Belt_Green", [-1]]
+			
+		];
+		_weapons =
+		[
+			["LMG_M200", [-1]],
+			["LMG_M200", [-1]]
+			
 		];
 	};
 };
