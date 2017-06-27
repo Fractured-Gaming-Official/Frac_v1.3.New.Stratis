@@ -967,6 +967,7 @@ helicoptersArray = compileFinal str
 
 	["UH-80 Ghost Hawk", "B_Heli_Transport_01_F", 15000, "vehicle"], // UH-60 Stealth with 2 side miniguns
 	["AH-9 Pawnee (Gun-Only)", "B_Heli_Light_01_dynamicLoadout_F", 25000, "vehicle", "variant_pawneeGun"], // Armed AH-6 (no missiles)
+	["AH-9 Pawnee (SkyHunter)", "B_Heli_Light_01_dynamicLoadout_F", 30000, "vehicle", "variant_PawneeSkyHunter"],
 	["AH-9 Pawnee", "B_Heli_Light_01_dynamicLoadout_F", 40000, "vehicle", "variant_pawneeNormal"], // Armed AH-6
 	["PO-30 Orca (DAR)", "O_Heli_Light_02_dynamicLoadout_F", 50000, "vehicle", "variant_orcaDAR"], // Armed Ka-60
 	["PO-30 Orca (DAGR)", "O_Heli_Light_02_dynamicLoadout_F", 60000, "vehicle", "variant_orcaDAGR"], // Armed Ka-60
@@ -981,7 +982,8 @@ helicoptersArray = compileFinal str
 planesArray = compileFinal str
 [
 	["Caesar BTT", "C_Plane_Civil_01_F", 2500, "vehicle"],
-
+    ["Caesar Combat", "C_Plane_Civil_01_racing_F", 5000, "vehicle"],
+	
 	["A-143 Buzzard AA", "I_Plane_Fighter_03_dynamicLoadout_F", 400000, "vehicle", "variant_buzzardAA"],
 	["A-143 Buzzard CAS", "I_Plane_Fighter_03_dynamicLoadout_F", 500000, "vehicle", "variant_buzzardCAS"],
 
