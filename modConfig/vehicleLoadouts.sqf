@@ -21,7 +21,7 @@ switch (true) do
 		switch (_variant) do
 		{
 			case "pawneeGun": { _pylons = ["",""] };
-			case "PawneeShriek": { _pylons = ["PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_AP_F"] };
+			case "PawneeSkyHunter": { _pylons = ["PylonRack_19Rnd_Rocket_Skyfire","PylonRack_1Rnd_Missile_AA_04_F"] };
 			default           { _pylons = ["PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles"] };
 			
 				
@@ -156,12 +156,11 @@ switch (true) do
 		_pylons = ["PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonMissile_1Rnd_Bomb_03_F","PylonRack_20Rnd_Rocket_03_HE_F","PylonRack_20Rnd_Rocket_03_AP_F","PylonMissile_1Rnd_Bomb_03_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_03_F"];
 	};
 
-	// Greyhawk/Ababil UAVs
+	/*// Greyhawk/Ababil UAVs
 	case (_class isKindOf "UAV_02_dynamicLoadout_base_F"):
 	{
 		switch (_variant) do
 		{
-			case "greyhawkBomber": {_pylons = ["PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F"]};
 			default
 			{
 				_customCode =
@@ -172,7 +171,7 @@ switch (true) do
 				};
 			};
 		};
-	};
+	};*/
 	// Greyhawk Bomber UAV
 	case (_class isKindOf "B_UAV_02_CAS_F"):
 	{
@@ -258,7 +257,7 @@ switch (true) do
 			["120Rnd_CMFlare_Chaff_Magazine", [-1]],
 			["1000Rnd_65x39_Belt_Green", [0]],
 			["24Rnd_missiles", [0]],
-			["2Rnd_LG_scalpel", [0]],
+			["6Rnd_LG_scalpel", [0]],
 			["2Rnd_AAA_missiles", [0]],
 			["Laserbatteries", [0]]
 		];
@@ -272,20 +271,19 @@ switch (true) do
 			["Laserdesignator_mounted", [0]]
 		];
 	};
-};// Ceasar (non-dynamicLoadout)
+    // Ceasar (non-dynamicLoadout)
 	case (_class isKindOf "C_Plane_Civil_01_racing_F"):
 	{
 		_mags =
 		[
 			
-			["1000Rnd_65x39_Belt_Green", [-1]],
-			["1000Rnd_65x39_Belt_Green", [-1]]
+			["500Rnd_127x99_mag_Tracer_Green", [-1]]
 			
 		];
 		_weapons =
 		[
-			["LMG_M200", [-1]],
-			["LMG_M200", [-1]]
+			["HMG_127_LSV_01", [-1]]
+			
 			
 		];
 	};
