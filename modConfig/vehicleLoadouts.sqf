@@ -287,4 +287,37 @@ switch (true) do
 			
 		];
 	};
+	 
+	// MQ-12 Falcon UAV (non-dynamicLoadout)
+	case (_class isKindOf "B_T_UAV_03_dynamicLoadout_F"):
+	{
+		_mags =
+		[
+			["120Rnd_CMFlare_Chaff_Magazine", [-1]],
+			["200Rnd_20mm_G_belt", [0]],
+			["Laserbatteries", [0]]
+		];
+		_weapons =
+		[
+			["CMFlareLauncher", [-1]],
+			["GMG_20mm", [0]],
+			["Laserdesignator_mounted", [0]]
+		];
+	};
+	// Stomper (non-dynamicLoadout)
+	case (_class isKindOf "B_UGV_01_F"):
+	{
+		_mags =
+		[
+			
+			["magazine_Bomb_GBU12_x1", [-1]]
+			
+		];
+		_weapons =
+		[
+		
+			["weapon_GBU12Launcher", [-1]]
+			
+		];
+	};
 };

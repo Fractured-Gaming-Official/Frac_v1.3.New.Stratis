@@ -101,7 +101,6 @@ if (hasInterface || isServer) then
 	[] execVM "addons\lsd_nvg\init.sqf";
 	[] execVM "addons\stickyCharges\init.sqf";
 	[] execVM "addons\HvT\HvT.sqf";
-	[] execVM "addons\disableThermal\disablethermal.sqf";
 	[] execVM "addons\scripts\servercredits.sqf";
 	[] execVM "addons\laptop\init.sqf";
 	[] execVM "addons\Grenades\initGrenades.sqf";
