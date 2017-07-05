@@ -304,52 +304,5 @@ switch (true) do
 			["Laserdesignator_mounted", [0]]
 		];
 	};
-	// Stomper (non-dynamicLoadout)
-	case (_class isKindOf "B_UGV_01_F"):
-	{
-		_mags =
-		[
-			
-			["magazine_Bomb_GBU12_x1", [-1]]
-			
-		];
-		_weapons =
-		[
-		
-			["weapon_GBU12Launcher", [-1]]
-			
-		];
-	};
-	// Stomper (non-dynamicLoadout)
-	case (_class isKindOf "I_UGV_01_F"):
-	{
-		_mags =
-		[
-			
-			["magazine_Bomb_GBU12_x1", [-1]]
-			
-		];
-		_weapons =
-		[
-		
-			["weapon_GBU12Launcher", [-1]]
-			
-		];
-	};
-	// Stomper (non-dynamicLoadout)
-	case (_class isKindOf "O_UGV_01_F"):
-	{
-		_mags =
-		[
-			
-			["magazine_Bomb_GBU12_x1", [-1]]
-			
-		];
-		_weapons =
-		[
-		
-			["weapon_GBU12Launcher", [-1]]
-			
-		];
-	};
+	
 };
