@@ -18,8 +18,7 @@ _setupVars =
 		["I_Plane_Fighter_03_dynamicLoadout_F", "A-143 Buzzard AA"], 
 		"B_Plane_CAS_01_dynamicLoadout_F",
 		"O_Plane_CAS_02_dynamicLoadout_F",
-		"O_T_VTOL_02_infantry_dynamicLoadout_F",
-		"I_Plane_Fighter_03_AA_F"
+		"O_T_VTOL_02_infantry_dynamicLoadout_F"
 	];
 
 	_missionType = "Abandoned Jet";
