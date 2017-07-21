@@ -125,6 +125,6 @@ switch (_gearLevel) do
    
     default
     {
-		hint "Max your Bank account to upgrade Gear Level!";
+		hint "Check Map Info To Learn More About Gear Levels Or Visit Fractured-Gaming.com!";
     };
 };
