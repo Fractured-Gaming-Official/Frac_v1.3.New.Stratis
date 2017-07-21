@@ -25,15 +25,17 @@ storeOwnerConfig = compileFinal str
 	["GunStore5", -1, [], []],		//Agia Marina
 	["GunStore6", -1, [], []],		//Camp Maxwell
 	["GunStore7", -1, [], []],		//Walmart
+	
 
 	// Buttons you can disable: "Land", "Armored", "Tanks", "Helicopters", "Boats", "Planes"
-	["VehStore1", -1, [], ["Planes"]],		//Kamino
+	["VehStore1", -1, [], ["Planes", "Helicopters"]],		//Kamino
 	["VehStore2", -1, [], ["Boats"]],		//Airbase
 	["VehStore3", -1, [], ["Boats", "Planes"]],		//Agios Ioannis
 	["VehStore4", -1, [], ["Boats", "Planes"]],		//Agia Marina
 	["VehStore5", -1, [], ["Boats", "Planes"]],		//Walmart
 	["VehStore6", -1, [], ["Planes"]],				//Girna
-    ["VehStore7", -1, [], ["Boats", "Planes", "Tanks"]]	//Rogain
+    ["VehStore7", -1, [], ["Boats", "Planes", "Tanks"]],	//Rogain
+	["VehStore8", -1, [], ["Land", "Armored", "Tanks"]]	//Kamino Aircraft Carrier
 	
 ];
 
@@ -62,5 +64,6 @@ storeOwnerConfigAppearance = compileFinal str
 	["VehStore4", [["weapon", ""], ["uniform", "U_Competitor"]]],
 	["VehStore5", [["weapon", ""], ["uniform", "U_Competitor"]]],
 	["VehStore6", [["weapon", ""], ["uniform", "U_Competitor"]]],
-	["VehStore7", [["weapon", ""], ["uniform", "U_Competitor"]]]
+	["VehStore7", [["weapon", ""], ["uniform", "U_Competitor"]]],
+	["VehStore8", [["weapon", ""], ["uniform", "U_Competitor"]]]
 ];
