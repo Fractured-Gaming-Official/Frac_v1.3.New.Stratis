@@ -3,7 +3,7 @@ class CfgSounds
 {
 	sounds[] = 
 	{
-		beep, beep2, beep3, beep4, beep5, beep6, beep7, beep8, beep9
+		beep, beep2, beep3, beep4, beep5, beep6, beep7, beep8, beep9, alarm
 	};
 		class beep
 			{
@@ -50,6 +50,10 @@ class CfgSounds
                                 sound[] = {"addons\beacondetector\sound\beep.wav", db-10, 0.1};
                                 titles[] = {};
 			};
-		
+		class alarm
+ 		{
+ 							sound[] = {"addons\beacondetector\sound\alarm.wav", db-5, 0.5};
+ 							titles[] = {};
+ 		};
 
 };

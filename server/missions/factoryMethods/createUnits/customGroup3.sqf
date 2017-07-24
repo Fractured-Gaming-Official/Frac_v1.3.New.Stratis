@@ -40,9 +40,5 @@ for "_i" from 1 to _nbUnits do
     _unit call setMissionSkill;
     _unit addEventHandler ["Killed", server_playerDied];
 };
-// after group 1 unit, before commands/waypoints/etc...
-//[_group,HC1] call moveToHC;
-
-[_unit] call randomSoldierLoadOut;
  
 [_group, _pos] call defendArea;
