@@ -14,7 +14,7 @@ private ["_geoPos", "_geoCache", "_randomBox", "_randomCase", "_box1", "_para"];
 _setupVars =
 {
 	_missionType = "GeoCache";
-	_locationsArray = MissionSpawnMarkers;
+	_locationsArray = ForestMissionMarkers;
 };
 
 _setupObjects =

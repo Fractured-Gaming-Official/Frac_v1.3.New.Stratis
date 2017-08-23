@@ -6,7 +6,7 @@
 
 if (!isServer) exitWith {};
 
-private ["_group","_pos","_leader","_man2","_man3","_man4","_man5","_man6"];
+private ["_group","_pos","_leader","_man2","_man3","_man4","_man5","_man6","_man7","_man8","_man9","_man10"];
 
 _group = _this select 0;
 _pos = _this select 1;
@@ -79,36 +79,71 @@ _man6 addItem "Rangefinder";
 _man7 = _group createUnit ["C_man_polo_3_F", [_pos select 0, (_pos select 1) + 30, 0], [], 1, "Form"];
 _man7 addUniform "U_I_Ghilliesuit";
 _man7 addVest "V_HarnessOSpec_brn";
-_man7 addBackpack "B_Carryall_oli";
+_man7 addBackpack "B_Bergen_hex_F";
 _man7 addMagazine "10Rnd_762x51_Mag";
 _man7 addWeapon "srifle_DMR_01_F";
 _man7 addPrimaryWeaponItem "optic_Holosight";
 _man7 addMagazine "10Rnd_762x51_Mag";
 _man7 addMagazine "10Rnd_762x51_Mag";
-_man7 addMagazine "RPG32_F";
-_man7 addWeapon "launch_RPG32_F";
-_man7 addMagazine "RPG32_F";
-_man7 addMagazine "RPG32_F";
-_man7 addMagazine "RPG32_F";
+_man7 addMagazine "Titan_AT";
+_man7 addWeapon "launch_B_Titan_short_F";
+_man7 addMagazine "Titan_AT";
+_man7 addMagazine "Titan_AT";
+_man7 addMagazine "Titan_AT";
 _man7 addMagazine "HandGrenade";
-_man7 selectWeapon "launch_RPG32_F";
+_man7 selectWeapon "launch_B_Titan_short_F";
 
-//AA Defender
+//AT Defender
 _man8 = _group createUnit ["C_man_polo_3_F", [_pos select 0, (_pos select 1) + 30, 0], [], 1, "Form"];
 _man8 addUniform "U_I_Ghilliesuit";
 _man8 addVest "V_HarnessOSpec_brn";
-_man8 addBackpack "B_Carryall_oli";
+_man8 addBackpack "B_Bergen_hex_F";
 _man8 addMagazine "10Rnd_762x51_Mag";
 _man8 addWeapon "srifle_DMR_01_F";
 _man8 addPrimaryWeaponItem "optic_Holosight";
 _man8 addMagazine "10Rnd_762x51_Mag";
 _man8 addMagazine "10Rnd_762x51_Mag";
-_man8 addMagazine "Titan_AA";
-_man8 addWeapon "launch_I_Titan_F";
-_man8 addMagazine "Titan_AA";
-_man8 addMagazine "Titan_AA";
+_man8 addMagazine "Titan_AT";
+_man8 addWeapon "launch_B_Titan_short_F";
+_man8 addMagazine "Titan_AT";
+_man8 addMagazine "Titan_AT";
+_man8 addMagazine "Titan_AT";
 _man8 addMagazine "HandGrenade";
-_man8 selectWeapon "launch_I_Titan_F";
+_man8 selectWeapon "launch_B_Titan_short_F";
+
+//AA Defender
+_man9 = _group createUnit ["C_man_polo_3_F", [_pos select 0, (_pos select 1) + 30, 0], [], 1, "Form"];
+_man9 addUniform "U_I_Ghilliesuit";
+_man9 addVest "V_HarnessOSpec_brn";
+_man9 addBackpack "B_Bergen_hex_F";
+_man9 addMagazine "10Rnd_762x51_Mag";
+_man9 addWeapon "srifle_DMR_01_F";
+_man9 addPrimaryWeaponItem "optic_Holosight";
+_man9 addMagazine "10Rnd_762x51_Mag";
+_man9 addMagazine "10Rnd_762x51_Mag";
+_man9 addMagazine "Titan_AA";
+_man9 addWeapon "launch_I_Titan_F";
+_man9 addMagazine "Titan_AA";
+_man9 addMagazine "Titan_AA";
+_man9 addMagazine "HandGrenade";
+_man9 selectWeapon "launch_I_Titan_F";
+
+//AA Defender
+_man10 = _group createUnit ["C_man_polo_3_F", [_pos select 0, (_pos select 1) + 30, 0], [], 1, "Form"];
+_man10 addUniform "U_I_Ghilliesuit";
+_man10 addVest "V_HarnessOSpec_brn";
+_man10 addBackpack "B_Bergen_hex_F";
+_man10 addMagazine "10Rnd_762x51_Mag";
+_man10 addWeapon "srifle_DMR_01_F";
+_man10 addPrimaryWeaponItem "optic_Holosight";
+_man10 addMagazine "10Rnd_762x51_Mag";
+_man10 addMagazine "10Rnd_762x51_Mag";
+_man10 addMagazine "Titan_AA";
+_man10 addWeapon "launch_I_Titan_F";
+_man10 addMagazine "Titan_AA";
+_man10 addMagazine "Titan_AA";
+_man10 addMagazine "HandGrenade";
+_man10 selectWeapon "launch_I_Titan_F";
 
 sleep 0.1; // Without this delay, headgear doesn't get removed properly
 
@@ -120,7 +155,5 @@ _leader = leader _group;
 	_x addRating 9999999;
 	_x addEventHandler ["Killed", server_playerDied];
 } forEach units _group;
-
-[_group,HC1] call moveToHC;
 
 [_group, _pos] call defendArea;

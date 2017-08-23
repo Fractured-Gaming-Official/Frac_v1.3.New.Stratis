@@ -8,22 +8,22 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=1157;
+		nextID=1184;
 	};
 	class MarkerIDProvider
 	{
-		nextID=157;
+		nextID=159;
 	};
 	class LayerIndexProvider
 	{
-		nextID=52;
+		nextID=62;
 	};
 	class Camera
 	{
-		pos[]={6972.0322,63.63345,6373.3394};
-		dir[]={0.13222852,-0.030271772,-0.99086326};
-		up[]={0.0040198877,0.99948305,-0.030146923};
-		aside[]={-0.9913398,-3.0527735e-006,-0.13228671};
+		pos[]={7070.4741,526.58466,6652.5396};
+		dir[]={-0.39728227,-0.34293368,-0.85133761};
+		up[]={-0.14505723,0.93927163,-0.31083632};
+		aside[]={-0.90630037,-1.1790689e-006,0.42293766};
 	};
 };
 binarizationWanted=0;
@@ -253,7 +253,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=728;
+		items=755;
 		class Item0
 		{
 			dataType="Group";
@@ -9127,7 +9127,7 @@ class Mission
 					name="Parking1_spawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=222.76886;
+					angle=222.76881;
 					id=597;
 				};
 				class Item8
@@ -9328,7 +9328,7 @@ class Mission
 					name="VehStore8_planeSpawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=78.511993;
+					angle=78.511986;
 					id=1125;
 					atlOffset=23.544804;
 				};
@@ -9339,7 +9339,7 @@ class Mission
 					name="VehStore8_seaSpawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=225.39598;
+					angle=225.3959;
 					id=1126;
 					atlOffset=17.706646;
 				};
@@ -9354,7 +9354,7 @@ class Mission
 					fillName="DiagGrid";
 					a=190.39799;
 					b=46.667999;
-					angle=356.47998;
+					angle=356.47989;
 					id=1127;
 					atlOffset=16.793489;
 				};
@@ -9718,7 +9718,7 @@ class Mission
 					};
 					id=1147;
 					type="PlasticBarrier_03_blue_F";
-					atlOffset=0.18904114;
+					atlOffset=0.10359001;
 				};
 				class Item44
 				{
@@ -9737,7 +9737,7 @@ class Mission
 					};
 					id=1148;
 					type="PlasticBarrier_03_blue_F";
-					atlOffset=0.19083595;
+					atlOffset=0.10538483;
 				};
 				class Item45
 				{
@@ -9813,7 +9813,7 @@ class Mission
 				};
 			};
 			id=588;
-			atlOffset=0.25968218;
+			atlOffset=0.25567675;
 		};
 		class Item428
 		{
@@ -15862,6 +15862,274 @@ class Mission
 			id=1156;
 			type="Land_Research_house_V1_F";
 			atlOffset=0.0044593811;
+		};
+		class Item728
+		{
+			dataType="Marker";
+			position[]={6526.811,0,5218.3706};
+			name="ForestMission_1";
+			type="Empty";
+			colorName="ColorKhaki";
+			id=1157;
+			atlOffset=-70.850441;
+		};
+		class Item729
+		{
+			dataType="Marker";
+			position[]={5186.0195,223.2832,5056.1577};
+			name="ForestMission_2";
+			type="Empty";
+			colorName="ColorKhaki";
+			id=1158;
+			atlOffset=6.5400848;
+		};
+		class Item730
+		{
+			dataType="Marker";
+			position[]={4032.2007,139.38466,7011.2344};
+			name="ForestMission_3";
+			type="Empty";
+			colorName="ColorKhaki";
+			id=1159;
+		};
+		class Item731
+		{
+			dataType="Marker";
+			position[]={3968.3796,160.98291,5739.2031};
+			name="ForestMission_4";
+			type="Empty";
+			colorName="ColorKhaki";
+			id=1160;
+			atlOffset=52.612152;
+		};
+		class Item732
+		{
+			dataType="Marker";
+			position[]={2516.8306,65.670609,5417.3428};
+			name="ForestMission_5";
+			type="Empty";
+			colorName="ColorKhaki";
+			id=1161;
+		};
+		class Item733
+		{
+			dataType="Marker";
+			position[]={2406.1853,125.82259,5109.3516};
+			name="ForestMission_6";
+			type="Empty";
+			colorName="ColorKhaki";
+			id=1162;
+			atlOffset=42.94368;
+		};
+		class Item734
+		{
+			dataType="Marker";
+			position[]={4140.7046,162.83813,3981.689};
+			name="ForestMission_7";
+			type="Empty";
+			colorName="ColorKhaki";
+			id=1163;
+			atlOffset=-28.521179;
+		};
+		class Item735
+		{
+			dataType="Marker";
+			position[]={2472.0273,122.62529,2427.5059};
+			name="ForestMission_8";
+			type="Empty";
+			colorName="ColorKhaki";
+			id=1164;
+		};
+		class Item736
+		{
+			dataType="Marker";
+			position[]={3448.5432,233.35435,2910.1045};
+			name="ForestMission_9";
+			type="Empty";
+			colorName="ColorKhaki";
+			id=1165;
+		};
+		class Item737
+		{
+			dataType="Marker";
+			position[]={3160.834,142.61353,2701.1831};
+			name="ForestMission_10";
+			type="Empty";
+			colorName="ColorKhaki";
+			id=1166;
+			atlOffset=-58.536423;
+		};
+		class Item738
+		{
+			dataType="Marker";
+			position[]={3773.9419,0,4785.7271};
+			name="RoadblockMission_1";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=151.43643;
+			id=1167;
+			atlOffset=-194.78015;
+		};
+		class Item739
+		{
+			dataType="Marker";
+			position[]={4072.1948,122.86991,6331.1494};
+			name="RoadblockMission_2";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=83.814507;
+			id=1168;
+		};
+		class Item740
+		{
+			dataType="Marker";
+			position[]={4626.4858,142.73877,5877.2852};
+			name="RoadblockMission_3";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=106.25798;
+			id=1169;
+		};
+		class Item741
+		{
+			dataType="Marker";
+			position[]={5237.603,156.11261,5812.4033};
+			name="RoadblockMission_4";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=175.50098;
+			id=1170;
+		};
+		class Item742
+		{
+			dataType="Marker";
+			position[]={5018.1816,178.03186,4527.1963};
+			name="RoadblockMission_5";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=38.630367;
+			id=1171;
+		};
+		class Item743
+		{
+			dataType="Marker";
+			position[]={4458.731,192.09148,4270.7314};
+			name="RoadblockMission_6";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=188.10294;
+			id=1172;
+		};
+		class Item744
+		{
+			dataType="Marker";
+			position[]={4218.9668,211.57054,3552.6309};
+			name="RoadblockMission_7";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=64.00222;
+			id=1173;
+		};
+		class Item745
+		{
+			dataType="Marker";
+			position[]={3454.345,143.07484,2640.0947};
+			name="RoadblockMission_8";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=198.73297;
+			id=1174;
+		};
+		class Item746
+		{
+			dataType="Marker";
+			position[]={3121.5376,90.083191,1586.8013};
+			name="RoadblockMission_9";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=242.44916;
+			id=1175;
+		};
+		class Item747
+		{
+			dataType="Marker";
+			position[]={2281.7659,55.474331,2176.0723};
+			name="RoadblockMission_10";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=358.88675;
+			id=1176;
+		};
+		class Item748
+		{
+			dataType="Marker";
+			position[]={2721.895,47.214661,3835.0283};
+			name="RoadblockMission_11";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=91.738274;
+			id=1177;
+			atlOffset=0.0034103394;
+		};
+		class Item749
+		{
+			dataType="Marker";
+			position[]={2833.1804,2.3208821,5925.729};
+			name="RoadblockMission_12";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=239.26392;
+			id=1178;
+		};
+		class Item750
+		{
+			dataType="Marker";
+			position[]={6006.3955,87.337395,4960.6074};
+			name="RoadblockMission_13";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=15;
+			id=1179;
+		};
+		class Item751
+		{
+			dataType="Marker";
+			position[]={3207.9951,3.9417763,5889.8989};
+			name="RoadblockMission_14";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=15;
+			id=1180;
+		};
+		class Item752
+		{
+			dataType="Marker";
+			position[]={3856.52,19.625708,5538.0068};
+			name="RoadblockMission_15";
+			type="Empty";
+			colorName="ColorCIV";
+			angle=117.8437;
+			id=1181;
+		};
+		class Item753
+		{
+			dataType="Marker";
+			position[]={5429.7822,0,951.30469};
+			name="marker_157";
+			text="Join us on TS3 @ TS.Fractured-Gaming.com  ";
+			type="mil_dot";
+			id=1182;
+			atlOffset=128.93048;
+		};
+		class Item754
+		{
+			dataType="Marker";
+			position[]={5426.811,0,759.06384};
+			name="marker_158";
+			text="Donate @ www.Fractured-Gaming.com";
+			type="mil_dot";
+			id=1183;
+			atlOffset=112.81521;
 		};
 	};
 };

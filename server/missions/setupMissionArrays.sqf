@@ -33,7 +33,10 @@ SideMissions =
 	["mission_Truck", 1],
 	["mission_AirWreck", 2],
 	["mission_geoCache", 1],
-	["mission_HostileJet", 0.5]
+	["mission_HostileJet", 0.5],
+	["mission_WepCache", 2],
+	["mission_Sniper", 2],
+	["mission_Roadblock", 2]
 	
 ];
 
@@ -46,6 +49,7 @@ MoneyMissions =
 MissionSpawnMarkers = (allMapMarkers select {["Mission_", _x] call fn_startsWith}) apply {[_x, false]};
 ForestMissionMarkers = (allMapMarkers select {["ForestMission_", _x] call fn_startsWith}) apply {[_x, false]};
 SunkenMissionMarkers = (allMapMarkers select {["SunkenMission_", _x] call fn_startsWith}) apply {[_x, false]};
+RoadblockMissionMarkers = (allMapMarkers select {["RoadblockMission_", _x] call fn_startsWith}) apply {[_x, false]};
 
 if !(ForestMissionMarkers isEqualTo []) then
 {
