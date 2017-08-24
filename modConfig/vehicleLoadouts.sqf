@@ -22,13 +22,28 @@ switch (true) do
 		{
 			case "pawneeGun": { _pylons = ["",""] };
 			case "PawneeSkyHunter": { _pylons = ["PylonRack_19Rnd_Rocket_Skyfire","PylonRack_1Rnd_Missile_AA_04_F"] };
-			default           { _pylons = ["PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles"] };
+			case "PawneeGround": { _pylons = ["PylonRack_19Rnd_Rocket_Skyfire","PylonRack_1Rnd_Missile_AA_04_F"] };
+			default           { _pylons = ["PylonRack_12Rnd_missiles","PylonMissile_1Rnd_LG_scalpel"] };
 			
 				
 			
 		};
 	};
 
+	// HellCat
+	case (_class isKindOf "	I_Heli_light_03_dynamicLoadout_F"):
+	{
+		switch (_variant) do
+		{
+			case "HellGun": { _pylons = ["",""] };
+			case "HellShrieker": { _pylons = ["PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_AP_F"] };
+			case "HellAT": { _pylons = ["PylonRack_12Rnd_PG_missiles","PylonRack_3Rnd_LG_scalpel"] };
+			
+				
+			
+		};
+	};
+	
 	// PO-30 Orca
 	case (_class isKindOf "O_Heli_Light_02_dynamicLoadout_F"):
 	{
@@ -244,7 +259,26 @@ switch (true) do
 	{
 		switch (_variant) do
 		{
-			case "sentinelBomber": { _pylons = ["PylonMissile_Bomb_GBU12_x1","PylonMissile_Bomb_GBU12_x1"] };
+			case "sentinelBomber": 
+			{ 
+				_mags =
+				[
+					["magazine_Bomb_KAB250_x1", [0]],
+					["magazine_Bomb_KAB250_x1", [0]],
+					["magazine_Bomb_KAB250_x1", [0]],
+					["magazine_Bomb_KAB250_x1", [0]],
+					["magazine_Bomb_KAB250_x1", [0]],
+					["magazine_Bomb_KAB250_x1", [0]],
+					["magazine_Bomb_KAB250_x1", [0]],
+					["magazine_Bomb_KAB250_x1", [0]],
+					
+					["Laserbatteries", [0]]
+					
+				];
+				
+				
+				_pylons = ["PylonMissile_Bomb_KAB250_x1","PylonMissile_Bomb_KAB250_x1"];
+			};
 			default                { _pylons = ["PylonMissile_Missile_AGM_02_x2","PylonMissile_Missile_AGM_02_x2"] };
 		};
 	};
@@ -305,4 +339,29 @@ switch (true) do
 		];
 	};
 	
+	// Subs NATO
+	case (_class isKindOf "B_SDV_01_F"):
+	{
+		_mags =
+		[
+			["20Rnd_556x45_UW_mag", [0]],
+			["20Rnd_556x45_UW_mag", [0]],
+			["20Rnd_556x45_UW_mag", [0]],
+			["20Rnd_556x45_UW_mag", [0]],
+			["20Rnd_556x45_UW_mag", [0]],
+			["30Rnd_556x45_Stanag", [0]],
+			["30Rnd_556x45_Stanag", [0]],
+			["30Rnd_556x45_Stanag", [0]],
+			["Laserbatteries", [0]]
+			
+			
+		];
+		_weapons =
+		[
+		
+			["arifle_SDAR_F", [0]],
+			["Laserdesignator_mounted", [0]]
+			
+		];
+	};
 };
