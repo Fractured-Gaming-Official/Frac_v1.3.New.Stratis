@@ -22,7 +22,7 @@ switch (true) do
 		{
 			case "pawneeGun": { _pylons = ["",""] };
 			case "PawneeSkyHunter": { _pylons = ["PylonRack_19Rnd_Rocket_Skyfire","PylonRack_1Rnd_Missile_AA_04_F"] };
-			case "PawneeGround": { _pylons = ["PylonRack_19Rnd_Rocket_Skyfire","PylonRack_1Rnd_Missile_AA_04_F"] };
+			case "PawneeGround": { _pylons = ["PylonRack_12Rnd_missiles","PylonMissile_1Rnd_LG_scalpel"] };
 			default           { _pylons = ["PylonRack_12Rnd_missiles","PylonMissile_1Rnd_LG_scalpel"] };
 			
 				
@@ -31,16 +31,13 @@ switch (true) do
 	};
 
 	// HellCat
-	case (_class isKindOf "	I_Heli_light_03_dynamicLoadout_F"):
+	case (_class isKindOf "I_Heli_light_03_dynamicLoadout_F"):
 	{
 		switch (_variant) do
 		{
 			case "HellGun": { _pylons = ["",""] };
 			case "HellShrieker": { _pylons = ["PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_AP_F"] };
 			case "HellAT": { _pylons = ["PylonRack_12Rnd_PG_missiles","PylonRack_3Rnd_LG_scalpel"] };
-			
-				
-			
 		};
 	};
 	

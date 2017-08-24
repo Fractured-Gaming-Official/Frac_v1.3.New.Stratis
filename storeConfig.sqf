@@ -973,7 +973,7 @@ helicoptersArray = compileFinal str
 	["PO-30 Orca (DAGR)", "O_Heli_Light_02_dynamicLoadout_F", 50000, "vehicle", "variant_orcaDAGR"], // Armed Ka-60
 	["WY-55 Hellcat (Armed)", "I_Heli_light_03_dynamicLoadout_F", 60000, "vehicle"], // Armed AW159
 	["WY-55 Hellcat (Shrieker)", "I_Heli_light_03_dynamicLoadout_F", 50000, "vehicle", "variant_HellShrieker"], // Armed AW159
-	["WY-55 Hellcat (AT)", "I_Heli_light_03_dynamicLoadout_F", 70000, "vehicle, "variant_HellAT"], // Armed AW159
+	["WY-55 Hellcat (AT)", "I_Heli_light_03_dynamicLoadout_F", 70000, "vehicle", "variant_HellAT"], // Armed AW159
 	["AH-99 Blackfoot", "B_Heli_Attack_01_dynamicLoadout_F", 175000, "vehicle"], // RAH-66 with gunner
 	["Mi-48 Kajman", "O_Heli_Attack_02_dynamicLoadout_F", 200000, "vehicle"], // Mi-28 with gunner 
 	["Y-32 Xi'an", "O_T_VTOL_02_infantry_dynamicLoadout_F", 175000, "vehicle"],
