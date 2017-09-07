@@ -8,19 +8,19 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=1184;
+		nextID=1187;
 	};
 	class MarkerIDProvider
 	{
-		nextID=159;
+		nextID=162;
 	};
 	class LayerIndexProvider
 	{
-		nextID=62;
+		nextID=64;
 	};
 	class Camera
 	{
-		pos[]={7070.4741,526.58466,6652.5396};
+		pos[]={7465.9556,860.8457,7401.0723};
 		dir[]={-0.39728227,-0.34293368,-0.85133761};
 		up[]={-0.14505723,0.93927163,-0.31083632};
 		aside[]={-0.90630037,-1.1790689e-006,0.42293766};
@@ -253,7 +253,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=755;
+		items=758;
 		class Item0
 		{
 			dataType="Group";
@@ -9339,7 +9339,7 @@ class Mission
 					name="VehStore8_seaSpawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=225.3959;
+					angle=225.39589;
 					id=1126;
 					atlOffset=17.706646;
 				};
@@ -15966,7 +15966,7 @@ class Mission
 			name="RoadblockMission_1";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=151.43643;
+			angle=151.43642;
 			id=1167;
 			atlOffset=-194.78015;
 		};
@@ -15987,7 +15987,7 @@ class Mission
 			name="RoadblockMission_3";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=106.25798;
+			angle=106.25797;
 			id=1169;
 		};
 		class Item741
@@ -15997,7 +15997,7 @@ class Mission
 			name="RoadblockMission_4";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=175.50098;
+			angle=175.50096;
 			id=1170;
 		};
 		class Item742
@@ -16017,7 +16017,7 @@ class Mission
 			name="RoadblockMission_6";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=188.10294;
+			angle=188.10292;
 			id=1172;
 		};
 		class Item744
@@ -16027,7 +16027,7 @@ class Mission
 			name="RoadblockMission_7";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=64.00222;
+			angle=64.002213;
 			id=1173;
 		};
 		class Item745
@@ -16037,7 +16037,7 @@ class Mission
 			name="RoadblockMission_8";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=198.73297;
+			angle=198.73296;
 			id=1174;
 		};
 		class Item746
@@ -16047,7 +16047,7 @@ class Mission
 			name="RoadblockMission_9";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=242.44916;
+			angle=242.44914;
 			id=1175;
 		};
 		class Item747
@@ -16057,7 +16057,7 @@ class Mission
 			name="RoadblockMission_10";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=358.88675;
+			angle=358.88672;
 			id=1176;
 		};
 		class Item748
@@ -16067,7 +16067,7 @@ class Mission
 			name="RoadblockMission_11";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=91.738274;
+			angle=91.738266;
 			id=1177;
 			atlOffset=0.0034103394;
 		};
@@ -16078,7 +16078,7 @@ class Mission
 			name="RoadblockMission_12";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=239.26392;
+			angle=239.26389;
 			id=1178;
 		};
 		class Item750
@@ -16108,28 +16108,58 @@ class Mission
 			name="RoadblockMission_15";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=117.8437;
+			angle=117.84369;
 			id=1181;
 		};
 		class Item753
 		{
 			dataType="Marker";
-			position[]={5429.7822,0,951.30469};
+			position[]={5481.4995,0,2347.668};
 			name="marker_157";
 			text="Join us on TS3 @ TS.Fractured-Gaming.com  ";
 			type="mil_dot";
 			id=1182;
-			atlOffset=128.93048;
+			atlOffset=45.74704;
 		};
 		class Item754
 		{
 			dataType="Marker";
-			position[]={5426.811,0,759.06384};
+			position[]={5447.498,0,2145.084};
 			name="marker_158";
 			text="Donate @ www.Fractured-Gaming.com";
 			type="mil_dot";
 			id=1183;
-			atlOffset=112.81521;
+			atlOffset=50.019562;
+		};
+		class Item755
+		{
+			dataType="Marker";
+			position[]={4962.3818,0,1402.2693};
+			name="marker_159";
+			text="Raise $450 in donations for the month of September . ";
+			type="mil_objective";
+			id=1184;
+			atlOffset=42.555935;
+		};
+		class Item756
+		{
+			dataType="Marker";
+			position[]={4972.7256,0,947.15771};
+			name="marker_160";
+			text="Prize- 10 days with 50% off gear levels Starting Oct 1st";
+			type="mil_unknown";
+			id=1185;
+			atlOffset=46.415215;
+		};
+		class Item757
+		{
+			dataType="Marker";
+			position[]={4952.04,0,492.047};
+			name="marker_161";
+			text="Week 1 ----   $0 of $450 Raised";
+			type="mil_warning";
+			id=1186;
+			atlOffset=85.73201;
 		};
 	};
 };

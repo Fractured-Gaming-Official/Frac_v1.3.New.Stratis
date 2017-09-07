@@ -361,4 +361,24 @@ switch (true) do
 			
 		];
 	};
+	case (_class isKindOf "B_Heli_Transport_01_camo_F"):
+	{
+		_mags =
+		[
+			["32Rnd_40mm_G_belt", [1]],
+			["2000Rnd_65x39_Belt_Tracer_Green_Splash", [1]],
+			["32Rnd_40mm_G_belt", [2]],
+			["2000Rnd_65x39_Belt_Tracer_Green_Splash", [2]]
+			
+		];
+		_weapons =
+		[
+		
+			["GMG_40mm", [1]],
+			["LMG_Minigun_Transport", [1]],
+			["GMG_40mm", [2]],
+			["LMG_Minigun_Transport", [2]]
+			
+		];
+	};
 };
