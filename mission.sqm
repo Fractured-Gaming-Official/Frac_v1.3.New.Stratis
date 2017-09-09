@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=64;
+		nextID=66;
 	};
 	class Camera
 	{
@@ -9201,7 +9201,7 @@ class Mission
 					};
 					id=1113;
 					type="Land_GH_Stairs_F";
-					atlOffset=0.95791245;
+					atlOffset=0.95034027;
 				};
 				class Item14
 				{
@@ -9218,7 +9218,7 @@ class Mission
 					};
 					id=1114;
 					type="Land_GH_Stairs_F";
-					atlOffset=4.8256454;
+					atlOffset=4.8180695;
 				};
 				class Item15
 				{
@@ -9236,7 +9236,7 @@ class Mission
 					};
 					id=1115;
 					type="Land_PierLadder_F";
-					atlOffset=3.416626;
+					atlOffset=3.40905;
 				};
 				class Item16
 				{
@@ -9254,7 +9254,7 @@ class Mission
 					};
 					id=1116;
 					type="Land_PierLadder_F";
-					atlOffset=2.5790215;
+					atlOffset=2.5714493;
 				};
 				class Item17
 				{
@@ -9272,7 +9272,7 @@ class Mission
 					};
 					id=1117;
 					type="Land_PierLadder_F";
-					atlOffset=3.1735458;
+					atlOffset=3.1659698;
 				};
 				class Item18
 				{
@@ -9290,7 +9290,7 @@ class Mission
 					};
 					id=1118;
 					type="Land_PierLadder_F";
-					atlOffset=2.5525055;
+					atlOffset=2.5449295;
 				};
 				class Item19
 				{
@@ -9339,7 +9339,7 @@ class Mission
 					name="VehStore8_seaSpawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=225.39589;
+					angle=225.39587;
 					id=1126;
 					atlOffset=17.706646;
 				};
@@ -9374,7 +9374,7 @@ class Mission
 					};
 					id=1128;
 					type="Land_Atm_01_F";
-					atlOffset=0.030492783;
+					atlOffset=0.020694733;
 				};
 				class Item25
 				{
@@ -9449,7 +9449,7 @@ class Mission
 					};
 					id=1132;
 					type="Land_PierLadder_F";
-					atlOffset=0.13713837;
+					atlOffset=0.12956238;
 				};
 				class Item29
 				{
@@ -9681,7 +9681,7 @@ class Mission
 					};
 					id=1145;
 					type="PlasticBarrier_03_blue_F";
-					atlOffset=1.8123169;
+					atlOffset=1.8025208;
 				};
 				class Item42
 				{
@@ -9699,7 +9699,7 @@ class Mission
 					};
 					id=1146;
 					type="PlasticBarrier_03_blue_F";
-					atlOffset=1.8123169;
+					atlOffset=1.8025208;
 				};
 				class Item43
 				{
@@ -9718,7 +9718,7 @@ class Mission
 					};
 					id=1147;
 					type="PlasticBarrier_03_blue_F";
-					atlOffset=0.10359001;
+					atlOffset=0.093793869;
 				};
 				class Item44
 				{
@@ -9737,7 +9737,7 @@ class Mission
 					};
 					id=1148;
 					type="PlasticBarrier_03_blue_F";
-					atlOffset=0.10538483;
+					atlOffset=0.095588684;
 				};
 				class Item45
 				{
@@ -10294,7 +10294,7 @@ class Mission
 					};
 					id=624;
 					type="C_man_1_1_F";
-					atlOffset=0.30299902;
+					atlOffset=0.30299997;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10324,7 +10324,7 @@ class Mission
 			{
 			};
 			id=623;
-			atlOffset=0.30299902;
+			atlOffset=0.30299997;
 		};
 		class Item438
 		{
@@ -10691,7 +10691,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=653;
 			type="Land_Grave_dirt_F";
@@ -10709,7 +10708,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=654;
 			type="Land_Grave_dirt_F";
@@ -10727,7 +10725,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=655;
 			type="Land_Grave_dirt_F";
@@ -10877,7 +10874,6 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=670;
 			type="Land_SharpRock_apart";
@@ -10895,7 +10891,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=671;
 			type="Land_House_Big_02_V1_ruins_F";
@@ -11251,7 +11246,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=705;
 			type="Land_Grave_monument_F";
@@ -11269,7 +11263,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=706;
 			type="Land_Grave_V1_F";
@@ -11286,7 +11279,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=707;
 			type="Land_Grave_V1_F";
@@ -11303,7 +11295,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=708;
 			type="Land_Grave_V2_F";
@@ -11321,7 +11312,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=709;
 			type="Land_Grave_V3_F";
@@ -11339,7 +11329,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=710;
 			type="Land_Grave_V3_F";
@@ -11357,7 +11346,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=711;
 			type="Land_Grave_V2_F";
@@ -11375,7 +11363,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=712;
 			type="Land_Grave_V1_F";
@@ -11393,7 +11380,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=713;
 			type="Land_Grave_V1_F";
@@ -11411,7 +11397,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=714;
 			type="Land_Grave_V1_F";
@@ -11429,7 +11414,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=715;
 			type="Land_Grave_V2_F";
@@ -11447,7 +11431,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=727;
 			type="Land_Grave_V3_F";
@@ -11465,7 +11448,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=728;
 			type="Land_Grave_obelisk_F";
@@ -11482,7 +11464,6 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=729;
 			type="Land_Grave_obelisk_F";
@@ -11500,7 +11481,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=730;
 			type="Land_Grave_V2_F";
@@ -11517,7 +11497,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=731;
 			type="Land_Grave_V3_F";
@@ -11534,7 +11513,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=732;
 			type="Land_Grave_V3_F";
@@ -11551,7 +11529,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=733;
 			type="Land_Grave_V2_F";
@@ -11569,7 +11546,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=734;
 			type="Land_Grave_V2_F";
@@ -11587,7 +11563,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=735;
 			type="Land_Grave_V2_F";
@@ -11605,7 +11580,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=736;
 			type="Land_Grave_V3_F";
@@ -11623,7 +11597,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=737;
 			type="Land_Grave_V1_F";
@@ -11641,7 +11614,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=738;
 			type="Land_Grave_V2_F";
@@ -11659,7 +11631,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=746;
 			type="Land_Grave_memorial_F";
@@ -11676,7 +11647,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=747;
 			type="Land_Grave_dirt_F";
@@ -11694,7 +11664,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=748;
 			type="Land_Grave_dirt_F";
@@ -11712,7 +11681,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=749;
 			type="Land_Grave_dirt_F";
@@ -11730,7 +11698,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=750;
 			type="Land_Grave_dirt_F";
@@ -11748,7 +11715,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=751;
 			type="Land_Grave_dirt_F";
@@ -11766,7 +11732,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=752;
 			type="Land_Grave_dirt_F";
@@ -11784,7 +11749,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=753;
 			type="Land_Grave_dirt_F";
@@ -11802,7 +11766,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=754;
 			type="Land_Grave_dirt_F";
@@ -11820,7 +11783,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=755;
 			type="Land_Grave_dirt_F";
@@ -13150,7 +13112,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=881;
 			type="Land_Cargo_Tower_V2_ruins_F";
@@ -13337,7 +13298,6 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=946;
 			type="Land_TTowerBig_1_ruins_F";
@@ -14799,7 +14759,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1050;
 			type="Land_HBarrier_5_F";
@@ -14817,7 +14776,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1051;
 			type="Land_HBarrier_3_F";
@@ -14835,7 +14793,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1052;
 			type="Land_HBarrier_Big_F";
@@ -14853,7 +14810,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1053;
 			type="Land_HBarrier_Big_F";
@@ -14871,7 +14827,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1054;
 			type="Land_HBarrier_Big_F";
@@ -14889,7 +14844,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1055;
 			type="Land_HBarrier_Big_F";
@@ -14907,7 +14861,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1056;
 			type="Land_HBarrierWall_corner_F";
@@ -14925,7 +14878,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1057;
 			type="Land_HBarrierWall6_F";
@@ -14943,7 +14895,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1058;
 			type="Land_HBarrierWall4_F";
@@ -14961,7 +14912,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1059;
 			type="Land_HBarrier_3_F";
@@ -14979,7 +14929,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1060;
 			type="Land_HBarrier_5_F";
@@ -14997,7 +14946,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1061;
 			type="Land_HBarrierTower_F";
@@ -15015,7 +14963,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1062;
 			type="Land_HBarrierTower_F";
@@ -15033,7 +14980,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
 			};
 			id=1063;
 			type="Land_HBarrierTower_F";
@@ -15966,7 +15912,7 @@ class Mission
 			name="RoadblockMission_1";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=151.43642;
+			angle=151.4364;
 			id=1167;
 			atlOffset=-194.78015;
 		};
@@ -15997,7 +15943,7 @@ class Mission
 			name="RoadblockMission_4";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=175.50096;
+			angle=175.50095;
 			id=1170;
 		};
 		class Item742
@@ -16017,7 +15963,7 @@ class Mission
 			name="RoadblockMission_6";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=188.10292;
+			angle=188.10291;
 			id=1172;
 		};
 		class Item744
@@ -16057,7 +16003,7 @@ class Mission
 			name="RoadblockMission_10";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=358.88672;
+			angle=358.88669;
 			id=1176;
 		};
 		class Item748
@@ -16067,7 +16013,7 @@ class Mission
 			name="RoadblockMission_11";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=91.738266;
+			angle=91.738258;
 			id=1177;
 			atlOffset=0.0034103394;
 		};
@@ -16078,7 +16024,7 @@ class Mission
 			name="RoadblockMission_12";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=239.26389;
+			angle=239.26387;
 			id=1178;
 		};
 		class Item750
@@ -16108,58 +16054,58 @@ class Mission
 			name="RoadblockMission_15";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=117.84369;
+			angle=117.84368;
 			id=1181;
 		};
 		class Item753
 		{
 			dataType="Marker";
-			position[]={5481.4995,0,2347.668};
+			position[]={4057.0471,0,1731.447};
 			name="marker_157";
-			text="Join us on TS3 @ TS.Fractured-Gaming.com  ";
+			text="Join us on Discord @ Fractured Gaming";
 			type="mil_dot";
 			id=1182;
-			atlOffset=45.74704;
+			atlOffset=17.49329;
 		};
 		class Item754
 		{
 			dataType="Marker";
-			position[]={5447.498,0,2145.084};
+			position[]={4072.1646,0,1595.8438};
 			name="marker_158";
 			text="Donate @ www.Fractured-Gaming.com";
 			type="mil_dot";
 			id=1183;
-			atlOffset=50.019562;
+			atlOffset=27.1887;
 		};
 		class Item755
 		{
 			dataType="Marker";
-			position[]={4962.3818,0,1402.2693};
+			position[]={4055.9121,0,1388.8733};
 			name="marker_159";
 			text="Raise $450 in donations for the month of September . ";
 			type="mil_objective";
 			id=1184;
-			atlOffset=42.555935;
+			atlOffset=27.845163;
 		};
 		class Item756
 		{
 			dataType="Marker";
-			position[]={4972.7256,0,947.15771};
+			position[]={4052.8599,0,1197.2183};
 			name="marker_160";
 			text="Prize- 10 days with 50% off gear levels Starting Oct 1st";
 			type="mil_unknown";
 			id=1185;
-			atlOffset=46.415215;
+			atlOffset=32.893814;
 		};
 		class Item757
 		{
 			dataType="Marker";
-			position[]={4952.04,0,492.047};
+			position[]={4050.0349,0,1005.564};
 			name="marker_161";
-			text="Week 1 ----   $0 of $450 Raised";
+			text="Week 2 ----   $200 of $450 Raised";
 			type="mil_warning";
 			id=1186;
-			atlOffset=85.73201;
+			atlOffset=46.971928;
 		};
 	};
 };

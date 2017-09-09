@@ -614,7 +614,6 @@ player createDiaryRecord ["admins",
 <br/> * Mokey
 <br/> * Ghostyy
 <br/> * OutlawII
-<br/> * RequiemAnarchy
 <br/> * Shine_Dwarf
 
 <br/><font color='#0066FF' size='18'>High Admins</font>
@@ -626,7 +625,6 @@ player createDiaryRecord ["admins",
 <br/><font color='#00FFEF' size='12'>Spectate, Slay, Delete Hacked Objects</font>
 <br/> * Llama
 <br/> * Zenkiton
-<br/> * GenNukes
 
 "
 ]];
