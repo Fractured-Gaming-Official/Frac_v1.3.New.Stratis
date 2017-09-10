@@ -990,6 +990,7 @@ planesArray = compileFinal str
 	
 	["A-143 Buzzard AA", "I_Plane_Fighter_03_dynamicLoadout_F", 250000, "vehicle", "variant_buzzardAA"],
 	["A-143 Buzzard CAS", "I_Plane_Fighter_03_dynamicLoadout_F", 275000, "vehicle", "variant_buzzardCAS"],
+	//["A-143 Buzzard CAS", "I_Plane_Fighter_03_CAS_F", 275000, "vehicle", "variant_buzzardCAS"],
 
 	["A-149 Gryphon", "I_Plane_Fighter_04_F", 200000, "vehicle"],
 
