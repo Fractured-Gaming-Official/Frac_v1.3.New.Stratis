@@ -168,80 +168,34 @@ switch (true) do
 		_pylons = ["PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonMissile_1Rnd_Bomb_03_F","PylonRack_20Rnd_Rocket_03_HE_F","PylonRack_20Rnd_Rocket_03_AP_F","PylonMissile_1Rnd_Bomb_03_F","PylonRack_1Rnd_Missile_AGM_01_F","PylonRack_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_03_F"];
 	};
 
-	/*// Greyhawk/Ababil UAVs
-	case (_class isKindOf "UAV_02_dynamicLoadout_base_F"):
+	
+	// Greyhawk Bomber UAV
+	case (_class isKindOf "B_UAV_02_dynamicLoadout_F"):
 	{
 		switch (_variant) do
 		{
-			default
-			{
-				_customCode =
-				{
-					_veh setAmmoOnPylon [1, 3]; // right wing
-					_veh setAmmoOnPylon [2, 3]; // left wing
+			case "GreyBomber": 
+			{ 
+				_mags =
+				[
+					["120Rnd_CMFlare_Chaff_Magazine", [-1]],
+					["60Rnd_40mm_GPR_Tracer_Green_shells", [0]],
+					["40Rnd_40mm_APFSDS_Tracer_Green_shells", [0]],
+					["Laserbatteries", [0]]
 					
-				};
+				];
+				_weapons =
+				[
+					["CMFlareLauncher", [-1]],
+					["autocannon_40mm_VTOL_01", [0]],
+					["Laserdesignator_mounted", [0]]
+				];
+				_pylons = ["PylonMissile_1Rnd_BombCluster_01_F","PylonRack_Bomb_GBU12_x2"];
 			};
+			case "GreyMissile": { _pylons = ["PylonRack_4Rnd_LG_scalpel","PylonRack_12Rnd_PG_missiles"] };
 		};
-	};*/
-	// Greyhawk Bomber UAV
-	case (_class isKindOf "B_UAV_02_CAS_F"):
-	{
-		_mags =
-		[
-			["120Rnd_CMFlare_Chaff_Magazine", [-1]],
-			["magazine_Fighter02_Gun30mm_AA_x180", [0]],
-			["magazine_Fighter02_Gun30mm_AA_x180", [0]],
-			["2Rnd_GBU12_LGB_MI10", [0]],
-			["Laserbatteries", [0]]
-		];
-		_weapons =
-		[
-			["CMFlareLauncher", [-1]],
-			["weapon_Fighter_Gun_30mm", [0]],
-			["GBU12BombLauncher", [0]],
-			["Laserdesignator_mounted", [0]]
-		];
 	};
-	// Ababil Bomber UAV
-	case (_class isKindOf "O_UAV_02_CAS_F"):
-	{
-		_mags =
-		[
-			["120Rnd_CMFlare_Chaff_Magazine", [-1]],
-			["magazine_Fighter02_Gun30mm_AA_x180", [0]],
-			["magazine_Fighter02_Gun30mm_AA_x180", [0]],
-			["2Rnd_GBU12_LGB_MI10", [0]],
-			["Laserbatteries", [0]]
-		];
-		_weapons =
-		[
-			["CMFlareLauncher", [-1]],
-			["weapon_Fighter_Gun_30mm", [0]],
-			["GBU12BombLauncher", [0]],
-			["Laserdesignator_mounted", [0]]
-		];
-	};
-	// Ababil Bomber UAV
-	case (_class isKindOf "I_UAV_02_CAS_F"):
-	{
-		_mags =
-		[
-			["120Rnd_CMFlare_Chaff_Magazine", [-1]],
-			["magazine_Fighter02_Gun30mm_AA_x180", [0]],
-			["magazine_Fighter02_Gun30mm_AA_x180", [0]],
-			["2Rnd_GBU12_LGB_MI10", [0]],
-			["Laserbatteries", [0]]
-		];
-		_weapons =
-		[
-			["CMFlareLauncher", [-1]],
-			["weapon_Fighter_Gun_30mm", [0]],
-			["GBU12BombLauncher", [0]],
-			["Laserdesignator_mounted", [0]]
-		];
-	};
-
+	
 	// KH-3A Fenghuang UAV
 	/*case (_class isKindOf "O_T_UAV_04_CAS_F"):
 	{
@@ -266,74 +220,72 @@ switch (true) do
 					["magazine_Bomb_KAB250_x1", [0]],
 					["magazine_Bomb_KAB250_x1", [0]],
 					["magazine_Bomb_KAB250_x1", [0]],
-					["magazine_Bomb_KAB250_x1", [0]],
-					["magazine_Bomb_KAB250_x1", [0]],
-					
 					["Laserbatteries", [0]]
 					
 				];
-				
-				
-				_pylons = ["PylonMissile_Bomb_KAB250_x1","PylonMissile_Bomb_KAB250_x1"];
+				_pylons = ["PylonMissile_1Rnd_BombCluster_01_F","PylonMissile_1Rnd_BombCluster_01_F"];
 			};
-			default                { _pylons = ["PylonMissile_Missile_AGM_02_x2","PylonMissile_Missile_AGM_02_x2"] };
+			case "sentinelMissile": { _pylons = ["PylonMissile_Missile_AGM_02_x2","PylonMissile_Missile_AGM_02_x2"] };
 		};
 	};
-
-	// MQ-12 Falcon UAV (non-dynamicLoadout)
-	case (_class isKindOf "B_T_UAV_03_F"):
-	{
-		_mags =
-		[
-			["120Rnd_CMFlare_Chaff_Magazine", [-1]],
-			["1000Rnd_65x39_Belt_Green", [0]],
-			["24Rnd_missiles", [0]],
-			["6Rnd_LG_scalpel", [0]],
-			["2Rnd_AAA_missiles", [0]],
-			["Laserbatteries", [0]]
-		];
-		_weapons =
-		[
-			["CMFlareLauncher", [-1]],
-			["LMG_M200", [0]],
-			["missiles_DAR", [0]],
-			["missiles_SCALPEL", [0]],
-			["missiles_ASRAAM", [0]],
-			["Laserdesignator_mounted", [0]]
-		];
-	};
     // Ceasar (non-dynamicLoadout)
-	case (_class isKindOf "C_Plane_Civil_01_racing_F"):
+	case (_class isKindOf "C_Plane_Civil_01_F"):
 	{
 		_mags =
 		[
 			
-			["500Rnd_127x99_mag_Tracer_Green", [-1]]
-			
+			["500Rnd_127x99_mag_Tracer_Green", [-1]],
+			["2Rnd_Mk82", [-1]]
 		];
 		_weapons =
 		[
-			["HMG_127_LSV_01", [-1]]
-			
-			
+			["HMG_127_LSV_01", [-1]],
+			["Mk82BombLauncher", [-1]]
 		];
-	};
-	 
-	// MQ-12 Falcon UAV (non-dynamicLoadout)
+		_customCode =
+		{
+			_veh setMagazineTurretAmmo ["2Rnd_Mk82", 1, [-1]];
+		};
+	}; 
+	// MQ-12 Falcon UAV
 	case (_class isKindOf "B_T_UAV_03_dynamicLoadout_F"):
 	{
-		_mags =
-		[
-			["120Rnd_CMFlare_Chaff_Magazine", [-1]],
-			["200Rnd_20mm_G_belt", [0]],
-			["Laserbatteries", [0]]
-		];
-		_weapons =
-		[
-			["CMFlareLauncher", [-1]],
-			["GMG_20mm", [0]],
-			["Laserdesignator_mounted", [0]]
-		];
+		switch (_variant) do
+		{
+			case "FalconScout": 
+			{
+				_mags =
+				[
+					["120Rnd_CMFlare_Chaff_Magazine", [-1]],
+					["500Rnd_65x39_Belt_Tracer_Red_Splash", [0]],
+					["Laserbatteries", [0]]
+				];
+				_weapons =
+				[
+					["CMFlareLauncher", [-1]],
+					["LMG_Minigun2", [0]],
+					["Laserdesignator_mounted", [0]]
+				];
+				_pylons = ["PylonRack_Missile_BIM9X_x2","PylonRack_1Rnd_LG_scalpel","PylonRack_1Rnd_LG_scalpel","PylonRack_Missile_BIM9X_x2"]
+			};
+			case "FalconAT": { _pylons = ["PylonRack_3Rnd_LG_scalpel","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F","PylonRack_12Rnd_PG_missiles"] };
+			case "Falcon+":
+			{
+				_mags =
+				[
+					["120Rnd_CMFlare_Chaff_Magazine", [-1]],
+					["500Rnd_65x39_Belt_Tracer_Red_Splash", [0]],
+					["Laserbatteries", [0]]
+				];
+				_weapons =
+				[
+					["CMFlareLauncher", [-1]],
+					["LMG_Minigun2", [0]],
+					["Laserdesignator_mounted", [0]]
+				]; 
+				_pylons = ["PylonRack_Missile_BIM9X_x2","PylonMissile_1Rnd_BombCluster_01_F","PylonRack_12Rnd_PG_missiles","PylonRack_4Rnd_LG_scalpel"];
+			};
+		};	
 	};
 	
 	// Subs NATO
@@ -361,6 +313,7 @@ switch (true) do
 			
 		];
 	};
+	//Ghosthawk
 	case (_class isKindOf "B_Heli_Transport_01_camo_F"):
 	{
 		_mags =
