@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=66;
+		nextID=68;
 	};
 	class Camera
 	{
@@ -3281,7 +3281,7 @@ class Mission
 						angles[]={0,2.3060727,0};
 					};
 					side="Civilian";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						init="[this] spawn A3W_fnc_setupStoreNPC";
@@ -3289,14 +3289,14 @@ class Mission
 					};
 					id=193;
 					type="C_man_1_1_F";
-					atlOffset=0.060775757;
+					atlOffset=0.50854492;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=192;
-			atlOffset=0.060775757;
+			atlOffset=0.50854492;
 		};
 		class Item44
 		{
@@ -9339,7 +9339,7 @@ class Mission
 					name="VehStore8_seaSpawn";
 					type="Empty";
 					colorName="ColorBlack";
-					angle=225.39587;
+					angle=225.39586;
 					id=1126;
 					atlOffset=17.706646;
 				};
@@ -15912,7 +15912,7 @@ class Mission
 			name="RoadblockMission_1";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=151.4364;
+			angle=151.43639;
 			id=1167;
 			atlOffset=-194.78015;
 		};
@@ -15943,7 +15943,7 @@ class Mission
 			name="RoadblockMission_4";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=175.50095;
+			angle=175.50093;
 			id=1170;
 		};
 		class Item742
@@ -15963,7 +15963,7 @@ class Mission
 			name="RoadblockMission_6";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=188.10291;
+			angle=188.10289;
 			id=1172;
 		};
 		class Item744
@@ -16003,7 +16003,7 @@ class Mission
 			name="RoadblockMission_10";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=358.88669;
+			angle=358.88666;
 			id=1176;
 		};
 		class Item748
@@ -16013,7 +16013,7 @@ class Mission
 			name="RoadblockMission_11";
 			type="Empty";
 			colorName="ColorCIV";
-			angle=91.738258;
+			angle=91.738251;
 			id=1177;
 			atlOffset=0.0034103394;
 		};
@@ -16080,30 +16080,33 @@ class Mission
 		class Item755
 		{
 			dataType="Marker";
-			position[]={4055.9121,0,1388.8733};
+			position[]={4055.9121,0,1388.873};
 			name="marker_159";
 			text="Raise $450 in donations for the month of September . ";
 			type="mil_objective";
+			colorName="ColorCIV";
 			id=1184;
-			atlOffset=27.845163;
+			atlOffset=27.845192;
 		};
 		class Item756
 		{
 			dataType="Marker";
-			position[]={4052.8599,0,1197.2183};
+			position[]={4052.8601,0,1197.218};
 			name="marker_160";
 			text="Prize- 10 days with 50% off gear levels Starting Oct 1st";
 			type="mil_unknown";
+			colorName="ColorCIV";
 			id=1185;
-			atlOffset=32.893814;
+			atlOffset=32.893787;
 		};
 		class Item757
 		{
 			dataType="Marker";
 			position[]={4050.0349,0,1005.564};
 			name="marker_161";
-			text="Week 2 ----   $200 of $450 Raised";
+			text="Week 3 ----   $220 of $450 Raised";
 			type="mil_warning";
+			colorName="ColorOrange";
 			id=1186;
 			atlOffset=46.971928;
 		};

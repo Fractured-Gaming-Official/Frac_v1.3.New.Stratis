@@ -223,6 +223,12 @@ switch (true) do
 					["Laserbatteries", [0]]
 					
 				];
+				_weapons =
+				[
+					["weapon_KAB250Launcher", [0]],
+					["Laserdesignator_mounted", [0]]
+					
+				];
 				_pylons = ["PylonMissile_1Rnd_BombCluster_01_F","PylonMissile_1Rnd_BombCluster_01_F"];
 			};
 			case "sentinelMissile": { _pylons = ["PylonMissile_Missile_AGM_02_x2","PylonMissile_Missile_AGM_02_x2"] };
