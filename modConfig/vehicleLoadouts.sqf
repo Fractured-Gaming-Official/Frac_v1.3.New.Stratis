@@ -196,6 +196,33 @@ switch (true) do
 		};
 	};
 	
+	// Ababil-3
+		case (_class isKindOf "UAV_02_dynamicLoadout_F"):
+	{
+		switch (_variant) do
+		{
+			case "GreyBomber": 
+			{ 
+				_mags =
+				[
+					["120Rnd_CMFlare_Chaff_Magazine", [-1]],
+					["60Rnd_40mm_GPR_Tracer_Green_shells", [0]],
+					["40Rnd_40mm_APFSDS_Tracer_Green_shells", [0]],
+					["Laserbatteries", [0]]
+					
+				];
+				_weapons =
+				[
+					["CMFlareLauncher", [-1]],
+					["autocannon_40mm_VTOL_01", [0]],
+					["Laserdesignator_mounted", [0]]
+				];
+				_pylons = ["PylonMissile_1Rnd_BombCluster_01_F","PylonRack_Bomb_GBU12_x2"];
+			};
+			case "GreyMissile": { _pylons = ["PylonRack_4Rnd_LG_scalpel","PylonRack_12Rnd_PG_missiles"] };
+		};
+	};
+	
 	// KH-3A Fenghuang UAV
 	/*case (_class isKindOf "O_T_UAV_04_CAS_F"):
 	{
