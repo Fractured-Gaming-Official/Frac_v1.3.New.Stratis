@@ -74,7 +74,7 @@ switch (true) do
 	{
 		switch (_variant) do
 		{
-			case "buzzardAA": { _pylons = ["PylonRack_1Rnd_Missile_AA_04_F","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_GAA_missiles","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_Missile_AA_04_F"] };
+			case "buzzardAA": { _pylons = ["PylonRack_Missile_BIM9X_x2","Missile_AA_03_Plane_CAS_02_F","PylonMissile_1Rnd_AAA_missiles","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_Missile_AA_04_F"] };
 			default           { _pylons = ["PylonRack_1Rnd_LG_scalpel","PylonRack_1Rnd_Missile_AA_04_F","PylonMissile_1Rnd_Bomb_04_F","PylonWeapon_300Rnd_20mm_shells","PylonMissile_1Rnd_Bomb_04_F","PylonRack_1Rnd_Missile_AA_04_F","PylonRack_1Rnd_LG_scalpel"] };
 		};
 		_customCode =
@@ -195,9 +195,34 @@ switch (true) do
 			case "GreyMissile": { _pylons = ["PylonRack_4Rnd_LG_scalpel","PylonRack_12Rnd_PG_missiles"] };
 		};
 	};
-	
-	// Ababil-3
-		case (_class isKindOf "UAV_02_dynamicLoadout_F"):
+	// Greyhawk Bomber UAV
+	case (_class isKindOf "I_UAV_02_dynamicLoadout_F"):
+	{
+		switch (_variant) do
+		{
+			case "GreyBomber": 
+			{ 
+				_mags =
+				[
+					["120Rnd_CMFlare_Chaff_Magazine", [-1]],
+					["60Rnd_40mm_GPR_Tracer_Green_shells", [0]],
+					["40Rnd_40mm_APFSDS_Tracer_Green_shells", [0]],
+					["Laserbatteries", [0]]
+					
+				];
+				_weapons =
+				[
+					["CMFlareLauncher", [-1]],
+					["autocannon_40mm_VTOL_01", [0]],
+					["Laserdesignator_mounted", [0]]
+				];
+				_pylons = ["PylonMissile_1Rnd_BombCluster_01_F","PylonRack_Bomb_GBU12_x2"];
+			};
+			case "GreyMissile": { _pylons = ["PylonRack_4Rnd_LG_scalpel","PylonRack_12Rnd_PG_missiles"] };
+		};
+	};
+	// Greyhawk Bomber UAV
+	case (_class isKindOf "O_UAV_02_dynamicLoadout_F"):
 	{
 		switch (_variant) do
 		{
