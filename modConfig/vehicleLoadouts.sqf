@@ -74,7 +74,8 @@ switch (true) do
 	{
 		switch (_variant) do
 		{
-			case "buzzardAA": { _pylons = ["PylonRack_Missile_BIM9X_x2","Missile_AA_03_Plane_CAS_02_F","PylonMissile_1Rnd_AAA_missiles","PylonWeapon_300Rnd_20mm_shells","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_GAA_missiles","PylonRack_1Rnd_Missile_AA_04_F"] };
+			case "buzzardAA": { _pylons = ["PylonRack_Missile_BIM9X_x1","PylonRack_1Rnd_GAA_missiles","PylonMissile_Missile_AA_R77_INT_x1","PylonWeapon_300Rnd_20mm_shells","PylonMissile_Missile_AA_R77_INT_x1","PylonRack_1Rnd_GAA_missiles","PylonRack_Missile_BIM9X_x1"] };
+			case "buzzardCAS": { _pylons = ["PylonMissile_Missile_AGM_KH25_INT_x1","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_Missile_AGM_02_x2","PylonWeapon_300Rnd_20mm_shells","PylonRack_Missile_AGM_02_x2","PylonRack_7Rnd_Rocket_04_AP_F","PylonMissile_Missile_AGM_KH25_INT_x1"] };
 			default           { _pylons = ["PylonRack_1Rnd_LG_scalpel","PylonRack_1Rnd_Missile_AA_04_F","PylonMissile_1Rnd_Bomb_04_F","PylonWeapon_300Rnd_20mm_shells","PylonMissile_1Rnd_Bomb_04_F","PylonRack_1Rnd_Missile_AA_04_F","PylonRack_1Rnd_LG_scalpel"] };
 		};
 		_customCode =
@@ -93,7 +94,7 @@ switch (true) do
 			["magazine_Fighter04_Gun20mm_AA_x250", [-1]],
 			["magazine_Fighter04_Gun20mm_AA_x250", [-1]], // extra gun mags (non-explosive ammo)
 			["Laserbatteries", [-1]],
-			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
+			["120Rnd_CMFlare_Chaff_Magazine", [-1]]
 		];
 		_pylons = ["PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonRack_Missile_AGM_02_x1","PylonRack_Missile_AGM_02_x1","PylonRack_Missile_AMRAAM_C_x1","PylonRack_Missile_AMRAAM_C_x1"];
 	};
@@ -124,7 +125,7 @@ switch (true) do
 			["Laserbatteries", [-1]],
 			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
 		];
-		_pylons = ["","","","","","","","","","","",""];
+		_pylons = ["PylonMissile_1Rnd_Missile_AA_03_F","PylonRack_1Rnd_Missile_AA_04_F","PylonMissile_Missile_AMRAAM_D_INT_x1","","","","","","","PylonMissile_Missile_AMRAAM_D_INT_x1","PylonRack_1Rnd_Missile_AA_04_F","PylonMissile_1Rnd_Missile_AA_03_F"];
 	};
 
 	// To-201 Shikra
@@ -178,9 +179,9 @@ switch (true) do
 			{ 
 				_mags =
 				[
-					["120Rnd_CMFlare_Chaff_Magazine", [-1]],
-					["60Rnd_40mm_GPR_Tracer_Green_shells", [0]],
+					["60Rnd_CMFlare_Chaff_Magazine", [-1]],
 					["40Rnd_40mm_APFSDS_Tracer_Green_shells", [0]],
+					["500Rnd_65x39_Belt_Tracer_Red_Splash", [0]],
 					["Laserbatteries", [0]]
 					
 				];
@@ -188,6 +189,7 @@ switch (true) do
 				[
 					["CMFlareLauncher", [-1]],
 					["autocannon_40mm_VTOL_01", [0]],
+					["LMG_Minigun2", [0]],
 					["Laserdesignator_mounted", [0]]
 				];
 				_pylons = ["PylonMissile_1Rnd_BombCluster_01_F","PylonRack_Bomb_GBU12_x2"];
@@ -204,9 +206,9 @@ switch (true) do
 			{ 
 				_mags =
 				[
-					["120Rnd_CMFlare_Chaff_Magazine", [-1]],
-					["60Rnd_40mm_GPR_Tracer_Green_shells", [0]],
+					["60Rnd_CMFlare_Chaff_Magazine", [-1]],
 					["40Rnd_40mm_APFSDS_Tracer_Green_shells", [0]],
+					["500Rnd_65x39_Belt_Tracer_Red_Splash", [0]],
 					["Laserbatteries", [0]]
 					
 				];
@@ -214,6 +216,7 @@ switch (true) do
 				[
 					["CMFlareLauncher", [-1]],
 					["autocannon_40mm_VTOL_01", [0]],
+					["LMG_Minigun2", [0]],
 					["Laserdesignator_mounted", [0]]
 				];
 				_pylons = ["PylonMissile_1Rnd_BombCluster_01_F","PylonRack_Bomb_GBU12_x2"];
@@ -230,9 +233,9 @@ switch (true) do
 			{ 
 				_mags =
 				[
-					["120Rnd_CMFlare_Chaff_Magazine", [-1]],
-					["60Rnd_40mm_GPR_Tracer_Green_shells", [0]],
+					["60Rnd_CMFlare_Chaff_Magazine", [-1]],
 					["40Rnd_40mm_APFSDS_Tracer_Green_shells", [0]],
+					["500Rnd_65x39_Belt_Tracer_Red_Splash", [0]],
 					["Laserbatteries", [0]]
 					
 				];
@@ -240,6 +243,7 @@ switch (true) do
 				[
 					["CMFlareLauncher", [-1]],
 					["autocannon_40mm_VTOL_01", [0]],
+					["LMG_Minigun2", [0]],
 					["Laserdesignator_mounted", [0]]
 				];
 				_pylons = ["PylonMissile_1Rnd_BombCluster_01_F","PylonRack_Bomb_GBU12_x2"];
@@ -283,7 +287,7 @@ switch (true) do
 				];
 				_pylons = ["PylonMissile_1Rnd_BombCluster_01_F","PylonMissile_1Rnd_BombCluster_01_F"];
 			};
-			case "sentinelMissile": { _pylons = ["PylonMissile_Missile_AGM_02_x2","PylonMissile_Missile_AGM_02_x2"] };
+			case "sentinelMissile": { _pylons = ["PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_BIM9X_x2"] };
 		};
 	};
     // Ceasar (non-dynamicLoadout)
@@ -305,6 +309,7 @@ switch (true) do
 			_veh setMagazineTurretAmmo ["2Rnd_Mk82", 1, [-1]];
 		};
 	}; 
+	
 	// MQ-12 Falcon UAV
 	case (_class isKindOf "B_T_UAV_03_dynamicLoadout_F"):
 	{
@@ -314,7 +319,7 @@ switch (true) do
 			{
 				_mags =
 				[
-					["120Rnd_CMFlare_Chaff_Magazine", [-1]],
+					["60Rnd_CMFlare_Chaff_Magazine", [-1]],
 					["500Rnd_65x39_Belt_Tracer_Red_Splash", [0]],
 					["Laserbatteries", [0]]
 				];
@@ -326,12 +331,13 @@ switch (true) do
 				];
 				_pylons = ["PylonRack_Missile_BIM9X_x2","PylonRack_1Rnd_LG_scalpel","PylonRack_1Rnd_LG_scalpel","PylonRack_Missile_BIM9X_x2"]
 			};
-			case "FalconAT": { _pylons = ["PylonRack_3Rnd_LG_scalpel","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F","PylonRack_12Rnd_PG_missiles"] };
+			case "FalconAT": { _pylons = ["PylonMissile_1Rnd_LG_scalpel","PylonRack_12Rnd_PG_missiles","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_LG_scalpel"] };
 			case "Falcon+":
 			{
 				_mags =
 				[
-					["120Rnd_CMFlare_Chaff_Magazine", [-1]],
+					["60Rnd_CMFlare_Chaff_Magazine", [-1]],
+					["500Rnd_65x39_Belt_Tracer_Red_Splash", [0]],
 					["500Rnd_65x39_Belt_Tracer_Red_Splash", [0]],
 					["Laserbatteries", [0]]
 				];

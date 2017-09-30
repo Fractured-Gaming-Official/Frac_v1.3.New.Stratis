@@ -990,13 +990,13 @@ planesArray = compileFinal str
 	["Caesar BTT Sport", "C_Plane_Civil_01_racing_F", 2500, "vehicle"],
     ["Caesar Combat", "C_Plane_Civil_01_F", 5000, "vehicle"],
 	
-	["A-143 Buzzard AA", "I_Plane_Fighter_03_dynamicLoadout_F", 250000, "vehicle", "variant_buzzardAA"],
-	["A-143 Buzzard CAS", "I_Plane_Fighter_03_dynamicLoadout_F", 275000, "vehicle", "variant_buzzardCAS"],
+	["A-143 Buzzard AA", "I_Plane_Fighter_03_dynamicLoadout_F", 150000, "vehicle", "variant_buzzardAA"],
+	["A-143 Buzzard CAS", "I_Plane_Fighter_03_dynamicLoadout_F", 225000, "vehicle", "variant_buzzardCAS"],
 	//["A-143 Buzzard CAS", "I_Plane_Fighter_03_CAS_F", 275000, "vehicle", "variant_buzzardCAS"],
 
 	["A-149 Gryphon", "I_Plane_Fighter_04_F", 200000, "vehicle"],
 
-	["F/A-181 Black Wasp (Gun-Only)", "B_Plane_Fighter_01_Stealth_F", 150000, "vehicle"], // no missiles or bombs
+	["F/A-181 Black Wasp (AA Lite)", "B_Plane_Fighter_01_Stealth_F", 175000, "vehicle"], // no missiles or bombs
 	["F/A-181 Black Wasp", "B_Plane_Fighter_01_F", 300000, "vehicle"],
 
 	["To-201 Shikra (Gun-Only)", "O_Plane_Fighter_02_Stealth_F", 175000, "vehicle"], // no missiles or bombs
@@ -1013,14 +1013,14 @@ planesArray = compileFinal str
 	["K40 Ababil-3 Bomber UAV", "O_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_GreyBomber"],
 	["K40 Ababil-3 Bomber UAV", "I_UAV_02_dynamicLoadout_F", 140000, "vehicle", "variant_GreyBomber"],
 
-	["MQ4A Greyhawk Missile UAV", "B_UAV_02_dynamicLoadout_F", 100000, "vehicle", "variant_GreyMissile"],
-	["K40 Ababil-3 Missile UAV", "O_UAV_02_dynamicLoadout_F", 100000, "vehicle", "variant_GreyMissile"],
-	["K40 Ababil-3 Missile UAV", "I_UAV_02_dynamicLoadout_F", 100000, "vehicle", "variant_GreyMissile"],
+	["MQ4A Greyhawk Missile UAV", "B_UAV_02_dynamicLoadout_F", 120000, "vehicle", "variant_GreyMissile"],
+	["K40 Ababil-3 Missile UAV", "O_UAV_02_dynamicLoadout_F", 120000, "vehicle", "variant_GreyMissile"],
+	["K40 Ababil-3 Missile UAV", "I_UAV_02_dynamicLoadout_F", 120000, "vehicle", "variant_GreyMissile"],
 
 	["KH-3A Fenghuang Missile UAV", "O_T_UAV_04_CAS_F", 80000, "vehicle"],
 
 	["UCAV Sentinel Bomber", "B_UAV_05_F", 120000, "vehicle", "variant_sentinelBomber"],
-	["UCAV Sentinel Missile", "B_UAV_05_F", 80000, "vehicle", "variant_sentinelMissile"]
+	["UCAV Sentinel AA", "B_UAV_05_F", 50000, "vehicle", "variant_sentinelMissile"]
 ];
 
 boatsArray = compileFinal str
