@@ -76,8 +76,6 @@ if (_dead || (_aboutToExplode && isNull _killerVehicle)) then
 		//systemChat "else";
 		[_vehicle, _source, _ammo, _instigator] call FAR_setKillerInfo;
 		//diag_log format ["vehicleHitTracking: %1 - %2", typeOf _vehicle, typeOf (_vehicle getVariable ["FAR_killerVehicle", objNull])];
-			};
-		};
 	};
 
 	//diag_log format ["vehicleHitTracking3: %1, %2, %3", typeOf _vehicle, typeOf _source, _ammo];
