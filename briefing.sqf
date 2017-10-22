@@ -33,6 +33,20 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
+"v1.4",
+"
+<br/>[Added] Laws of War DLC
+<br/>[Added] Killfeed HUD
+<br/>[Changed] Improved revive system
+<br/>[Changed] Improved kill attribution
+<br/>[Changed] Improved antihack
+<br/>[Fixed] Prone reload freeze
+<br/>[Fixed] Many minor changes and fixes
+"
+]];
+
+player createDiaryRecord ["changelog",
+[
 "v1.3b",
 "
 <br/>[Added] Private parking
@@ -89,59 +103,6 @@ br/> [Added] Heavy towing and airlifting
 <br/>[Fixed] Spawn cooldowns resetting on rejoin
 <br/>[Fixed] Striders spawning without laser batteries
 <br/>[Fixed] Disabled rain due to syncing issues
-<br/>[Fixed] Various minor bugfixes and optimizations
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"v1.2b",
-"
-<br/>[Added] Scoreboard scrolling via mousewheel
-<br/>[Added] New paintjobs for Kajman, Strider, Gorgon, Hatchback
-<br/>[Changed] Hostile Heli (single) crates now spawn on touchdown
-<br/>[Changed] Lowered Ifrit center of mass to reduce rollovers
-<br/>[Changed] Updated antihack database
-<br/>[Fixed] Saved grenades not throwable on rejoin
-<br/>[Fixed] Corpses not ejecting from vehicle wrecks
-<br/>[Fixed] Items not dropping from vehicle wreck corpses
-<br/>[Fixed] Revive not triggering properly on fatal shot
-<br/>[Fixed] Vehicle turret ammo saving issues
-<br/>[Fixed] Too low damage resistance during revive mode
-<br/>[Fixed] UGVs not airliftable via R3F
-<br/>[Fixed] Revive broken after getting run over by vehicles
-<br/>[Fixed] Veh respawn not being delayed when owner is within 1km
-<br/>[Fixed] All armor values showing 0 in general store
-<br/>[Fixed] Supplies category in general store sometimes empty
-<br/>[Fixed] Server rules not showing anymore in map menu
-<br/>[Fixed] Territory info overlapping with vehicle HUD
-<br/>[Fixed] Vehicle contents selling money exploit
-<br/>[Fixed] Antihack kicks not always working properly
-<br/>[Fixed] Various minor bugfixes and optimizations
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
-"v1.2",
-"
-<br/>[Added] Mag Repack by Outlawled (Ctrl + " + NKEYNAME(19) + ")
-<br/>[Added] Adjustable NV by xx-LSD-xx (Shift + PageUp/Down)
-<br/>[Added] New vehicle store paintjobs
-<br/>[Added] Town spawn cooldown
-<br/>[Added] Ghosting timer
-<br/>[Added] Object lock restriction near stores and missions
-<br/>[Added] Headless client object saving
-<br/>[Added] Time and weather saving
-<br/>[Changed] Expanded UAV control restriction to quadcopters
-<br/>[Changed] Injured players no longer count as town enemies
-<br/>[Changed] Upgraded extDB to extDB2 by Torndeco
-<br/>[Changed] Updated antihack
-<br/>[Fixed] Old spawn beacons no longer shown on spawn menu
-<br/>[Fixed] Multiple money duping exploits
-<br/>[Fixed] Vehicles and objects sometimes disappearing from DB
-<br/>[Fixed] Severe injuries caused by jumping over small ledges
-<br/>[Fixed] Antihack kicks due to RHS, MCC, AGM, ACE3, ALiVE
 <br/>[Fixed] Various minor bugfixes and optimizations
 "
 ]];
@@ -431,7 +392,7 @@ player createDiaryRecord ["gearlevel",
 <br/> An Extra Grenade
 <br/> A First Aid Kit
 <br/> A pair of Red Goggles
-<br/> An ECH Helmet
+<br/> An ECH Light Helmet
 <br/> An MX Marksmen rifle with 4 Mags an RCO and a suppressor instead of a MX Carbine
 <br/> A 4-five .45 Pistol with an MRD Sight and Suppressor instead of the ACP .45
 <br/> An RPG-42 Alamut with 1 Rocket
@@ -477,7 +438,7 @@ player createDiaryRecord ["gearlevel",
 <br/> An Extra Grenade
 <br/> A First Aid Kit
 <br/> A pair of Red Goggles
-<br/> An ECH Helmet
+<br/> An ECH Light Helmet
 <br/> A TRG-20 with 2 Mags and a Hologsight and Suppressor instead of a Vermin
 <br/> A 4-five .45 Pistol with an MRD Sight instead of the ACP .45
 <br/> An RPG-42 Alamut with 1 Rocket
@@ -500,7 +461,7 @@ player createDiaryRecord ["gearlevel",
 <br/> An Extra Grenade
 <br/> A First Aid Kit
 <br/> A pair of Red Goggles
-<br/> An ECH Helmet
+<br/> An ECH Light Helmet
 <br/> A TRG-20 with 2 Mags and a Hologsight instead of a Vermin
 <br/> A 4-five .45 Pistol instead of the ACP .45
 <br/> An RPG-42 Alamut with 1 Rocket
@@ -615,16 +576,20 @@ player createDiaryRecord ["admins",
 <br/> * Ghostyy
 <br/> * OutlawII
 <br/> * Shine_Dwarf
+<br/> * StinkySneeze (Second Best Canadian/Third Best Sniper)
 
 <br/><font color='#0066FF' size='18'>High Admins</font>
 <br/><font color='#00FFEF' size='12'>Teleport, Spectate, Slay Delete Hacked objects</font>
 <br/> * Harry
-<br/> * StinkySneeze
+<br/> * Donkey
+<br/> * Zenkiton
+<br/> * Rabidtroop
+
 
 <br/><font color='#002FFF' size='18'>Low Admins</font>
 <br/><font color='#00FFEF' size='12'>Spectate, Slay, Delete Hacked Objects</font>
-<br/> * Llama
-<br/> * Zenkiton
+<br/> * 
+<br/> * 
 
 "
 ]];

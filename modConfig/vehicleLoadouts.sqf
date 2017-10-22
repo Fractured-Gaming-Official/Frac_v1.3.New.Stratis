@@ -22,7 +22,7 @@ switch (true) do
 		{
 			case "pawneeGun": { _pylons = ["",""] };
 			case "PawneeSkyHunter": { _pylons = ["PylonRack_19Rnd_Rocket_Skyfire","PylonRack_1Rnd_Missile_AA_04_F"] };
-			case "PawneeGround": { _pylons = ["PylonRack_12Rnd_missiles","PylonMissile_1Rnd_LG_scalpel"] };
+			case "PawneeGround": { _pylons = ["PylonMissile_1Rnd_Mk82_F","PylonMissile_1Rnd_Mk82_F"] };
 			default           { _pylons = ["PylonRack_12Rnd_missiles","PylonMissile_1Rnd_LG_scalpel"] };
 			
 				
@@ -309,7 +309,24 @@ switch (true) do
 			_veh setMagazineTurretAmmo ["2Rnd_Mk82", 1, [-1]];
 		};
 	}; 
-	
+	case (_class isKindOf "C_Plane_Civil_01_racing_F"):
+	{
+		_mags =
+		[
+			
+			["1000Rnd_762x51_Belt_T_Red", [-1]],
+			["12Rnd_missiles", [-1]]
+		];
+		_weapons =
+		[
+			["LMG_coax", [-1]],
+			["missiles_DAR", [-1]]
+		];
+		_customCode =
+		{
+			_veh setMagazineTurretAmmo ["12Rnd_missiles", 4, [-1]];
+		};
+	}; 
 	// MQ-12 Falcon UAV
 	case (_class isKindOf "B_T_UAV_03_dynamicLoadout_F"):
 	{

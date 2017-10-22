@@ -21,7 +21,7 @@ _player linkItem "ItemGPS";
 _player addWeapon "Binocular";
 _player addMagazines ["HandGrenade", 2];
 _player addGoggles "G_Sport_Red";
-_player addHeadgear "H_HelmetB";
+_player addHeadgear "H_HelmetB_light";
 
 _player addMagazines ["11Rnd_45ACP_Mag", 2];
 _player addWeapon "hgun_Pistol_heavy_01_F";
