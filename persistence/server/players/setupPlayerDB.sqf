@@ -92,6 +92,10 @@ A3W_fnc_requestPlayerData =
 					case "Bounty":       { _player setVariable ["bounty", _val, true] };
 					case "BountyKills":  { _player setVariable ["bountyKills", _val, true] };
 				};
+				if (_x select 0 == "gearLevel") then
+				{
+					_player setVariable ["gear", _x select 1, true];
+				};
 			} forEach _data;
 
 			diag_log format ["pvar_requestPlayerData: %1", [owner _player, _player]];
