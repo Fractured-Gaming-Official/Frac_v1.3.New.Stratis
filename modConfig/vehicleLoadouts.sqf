@@ -22,7 +22,7 @@ switch (true) do
 		{
 			case "pawneeGun": { _pylons = ["",""] };
 			case "PawneeSkyHunter": { _pylons = ["PylonRack_19Rnd_Rocket_Skyfire","PylonRack_1Rnd_Missile_AA_04_F"] };
-			case "PawneeGround": { _pylons = ["PylonMissile_1Rnd_Mk82_F","PylonMissile_1Rnd_Mk82_F"] };
+			case "PawneeGround": { _pylons = ["PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles"] };
 			default           { _pylons = ["PylonRack_12Rnd_missiles","PylonMissile_1Rnd_LG_scalpel"] };
 			
 				
