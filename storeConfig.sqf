@@ -1002,8 +1002,8 @@ helicoptersArray = compileFinal str
 
 planesArray = compileFinal str
 [
-	["Caesar Combat(7.62/4 DAR)", "C_Plane_Civil_01_racing_F", 5000, "vehicle"],
-    ["Caesar Combat(50cal/MK82)", "C_Plane_Civil_01_F", 5000, "vehicle"],
+	["Caesar Combat(7.62/4 DAR)", "C_Plane_Civil_01_racing_F", 7500, "vehicle"],
+    ["Caesar Combat(50cal/MK82)", "C_Plane_Civil_01_F", 10000, "vehicle"],
 	
 	["A-143 Buzzard AA", "I_Plane_Fighter_03_dynamicLoadout_F", 150000, "vehicle", "variant_buzzardAA"],
 	["A-143 Buzzard CAS", "I_Plane_Fighter_03_dynamicLoadout_F", 225000, "vehicle", "variant_buzzardCAS"],
