@@ -752,9 +752,9 @@ genItemArray = compileFinal str
 	["Laser Designator (Sand)", "Laserdesignator", 2500, "binoc", "noDLC"], // Increase price to 2500 if A3W_disableBuiltInThermal = 0
 	["Laser Designator (Hex)", "Laserdesignator_02", 3000, "binoc", "noDLC"],
 	["Laser Designator (Olive)", "Laserdesignator_03", 2500, "binoc", "noDLC"],
-	["IR Grenade", "B_IR_Grenade", 50, "mag", "WEST"],
-	["IR Grenade", "O_IR_Grenade", 50, "mag", "EAST"],
-	["IR Grenade", "I_IR_Grenade", 50, "mag", "GUER"],
+	["IR Designator Grenade", "B_IR_Grenade", 50, "mag", "WEST"],
+	["IR Designator Grenade", "O_IR_Grenade", 50, "mag", "EAST"],
+	["IR Designator Grenade", "I_IR_Grenade", 50, "mag", "GUER"],
 	["Chemlight (Blue)", "Chemlight_blue", 25, "mag"],
 	["Chemlight (Green)", "Chemlight_green", 25, "mag"],
 	["Chemlight (Yellow)", "Chemlight_yellow", 25, "mag"],
