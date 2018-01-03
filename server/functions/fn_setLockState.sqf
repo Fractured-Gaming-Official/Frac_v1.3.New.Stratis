@@ -23,4 +23,3 @@ if (_state < 2) then
 {
 	_veh setVariable ["R3F_LOG_disabled", false, true];
 };
-© 2018 GitHub, Inc.

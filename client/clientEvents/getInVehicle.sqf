@@ -48,7 +48,7 @@ if (!_uavConnect) then
 
 				breakOut "getInVehicle";
 			};
-		};forEach crew _veh;
+		};forEach crew _veh
 	};
 };
 
